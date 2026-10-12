@@ -6,30 +6,348 @@
 <meta name="theme-color" content="#fff7eb">
 <meta name="description" content="たっちゃん家｜猫たち家族のゆるっとした日常をお届けする公式ホームページ">
 <title>たっちゃん家｜公式ホームページ</title>
+
 <style>
-:root{--ink:#51392c;--sub:#846a5c;--cream:#fff9ef;--peach:#f9e4d4;--accent:#d47c59;--line:#efd9c5}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.75}a{color:inherit}header{position:sticky;top:0;z-index:10;background:rgba(255,249,239,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}nav{max-width:1050px;margin:auto;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}.brand{font-size:1.35rem;font-weight:900;text-decoration:none}.navlinks{display:flex;flex-wrap:wrap;gap:14px}.navlinks a{text-decoration:none;font-size:.88rem;font-weight:700}main{max-width:1050px;margin:auto;padding:0 18px}.hero{text-align:center;padding:38px 10px 22px}.eyebrow{font-weight:800;color:var(--accent)}h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.3;margin:10px 0}.hero p{color:var(--sub)}.hero-image{display:block;width:min(100%,850px);height:auto;margin:22px auto;border-radius:22px;border:2px solid var(--line)}.cta,.link{display:inline-block;background:var(--accent);color:white;text-decoration:none;border-radius:99px;padding:9px 20px;font-weight:700}.section{padding:28px 0;scroll-margin-top:90px}.section h2{font-size:clamp(1.4rem,4vw,2rem);margin:0 0 8px}.section-lead{color:var(--sub);margin-top:0}.family-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}.profile,.panel{background:#fff;border:2px solid var(--line);border-radius:24px;padding:16px;box-shadow:0 5px 18px rgba(81,57,44,.04)}.profile img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;border-radius:16px;background:#fff}.profile h3{text-align:center;margin:12px 0 0;font-size:1.2rem}.panel h3{margin:0 0 8px}.panel p{margin:6px 0}.tiny{font-size:.85rem;color:var(--sub)}footer{text-align:center;padding:32px 15px;color:var(--sub)}@media(max-width:600px){nav{padding:12px 16px}.navlinks{gap:12px}.family-grid{grid-template-columns:1fr}.hero{padding-top:25px}}
+:root{
+  --ink:#51392c;
+  --sub:#846a5c;
+  --cream:#fff9ef;
+  --peach:#f9e4d4;
+  --accent:#d47c59;
+  --line:#efd9c5;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  line-height:1.75;
+}
+
+a{color:inherit}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(255,249,239,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(8px);
+}
+
+nav{
+  max-width:1050px;
+  margin:auto;
+  padding:14px 20px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+.brand{
+  font-size:1.35rem;
+  font-weight:900;
+  text-decoration:none;
+}
+
+.navlinks{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.navlinks a{
+  text-decoration:none;
+  font-size:.88rem;
+  font-weight:700;
+}
+
+main{
+  max-width:1050px;
+  margin:auto;
+  padding:0 18px;
+}
+
+.hero{
+  text-align:center;
+  padding:38px 10px 22px;
+}
+
+.eyebrow{
+  font-weight:800;
+  color:var(--accent);
+}
+
+h1{
+  font-size:clamp(2rem,6vw,3.3rem);
+  line-height:1.3;
+  margin:10px 0;
+}
+
+.hero p{color:var(--sub)}
+
+.hero-image{
+  display:block;
+  width:min(100%,850px);
+  height:auto;
+  margin:22px auto;
+  border-radius:22px;
+  border:2px solid var(--line);
+}
+
+.cta,.link{
+  display:inline-block;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  border-radius:99px;
+  padding:9px 20px;
+  font-weight:700;
+}
+
+.section{
+  padding:28px 0;
+  scroll-margin-top:90px;
+}
+
+.section h2{
+  font-size:clamp(1.4rem,4vw,2rem);
+  margin:0 0 8px;
+}
+
+.section-lead{
+  color:var(--sub);
+  margin-top:0;
+}
+
+.family-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+}
+
+.profile,.panel{
+  background:#fff;
+  border:2px solid var(--line);
+  border-radius:24px;
+  padding:16px;
+  box-shadow:0 5px 18px rgba(81,57,44,.04);
+}
+
+.profile img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:4/5;
+  object-fit:contain;
+  border-radius:16px;
+  background:#fff;
+}
+
+.profile h3{
+  text-align:center;
+  margin:12px 0 0;
+  font-size:1.2rem;
+}
+
+.panel h3{margin:0 0 8px}
+.panel p{margin:6px 0}
+
+.tiny{
+  font-size:.85rem;
+  color:var(--sub);
+}
+
+footer{
+  text-align:center;
+  padding:32px 15px;
+  color:var(--sub);
+}
+
+@media(max-width:600px){
+  nav{padding:12px 16px}
+  .navlinks{gap:12px}
+  .family-grid{grid-template-columns:1fr}
+  .hero{padding-top:25px}
+}
 </style>
 </head>
+
 <body>
-<header><nav><a class="brand" href="#top">🐾 たっちゃん家</a><div class="navlinks"><a href="#family">家族紹介</a><a href="https://www.instagram.com/tacchan_ossan_neko/">日記</a><a href="#room">おすすめ</a><a href="#fortune">占い</a><a href="#cooking">お料理</a><a href="#stamps">LINE</a><a href="#yuri">食べ歩き</a></div></nav></header>
-<main id="top">=
-<section class="hero"><div class="eyebrow">🐾 🏠 🐾</div><h1>たっちゃん家へ<br>ようこそ！</h1><p>まいど〜！ 猫たち家族のゆるっとした毎日をお届けするで〜。<br>笑ったり、のんびりしたり。気軽に遊びに来てな！</p><img class="hero-image" src="tacchan-family.png" alt="たっちゃん家の家族がソファに集合したイラスト"><a class="cta" href="#family">家族に会いにいく ↓</a></section>
-<section class="section" id="family"><h2>🐱 たっちゃん家の家族</h2><p class="section-lead">家族4人とペット3匹。みんなそれぞれ個性たっぷりやで！</p><div class="family-grid">
-<article class="profile"><img src="tatcchan.PNG" alt="父・たっちゃんの紹介画像" loading="eager"><h3>父・たっちゃん</h3></article>
-<article class="profile"><img src="micchan.PNG" alt="母・みっちゃんの紹介画像" loading="lazy"><h3>母・みっちゃん</h3></article>
-<article class="profile"><img src="riku.PNG" alt="長男・りくの紹介画像" loading="lazy"><h3>長男・りく</h3></article>
-<article class="profile"><img src="momo.PNG" alt="長女・ももの紹介画像" loading="lazy"><h3>長女・もも</h3></article>
-<article class="profile"><img src="ten.PNG" alt="白猫・てんの紹介画像" loading="lazy"><h3>てん 🐈</h3></article>
-<article class="profile"><img src="ame.PNG" alt="黒猫・あめの紹介画像" loading="lazy"><h3>あめ 🐈‍⬛</h3></article>
-<article class="profile"><img src="choco.PNG" alt="レオパ・ちょこの紹介画像" loading="lazy"><h3>ちょこ 🦎</h3></article>
-</div></section>
-<section class="section" id="diary"><h2>📖 たっちゃん日記</h2><div class="panel"><h3>今日もぼちぼち、ええ日やったな〜</h3><p>家族の何気ない日常を、写真や動画でお届けするで！</p><p class="tiny"> <img src="770C1195-DE0D-4EB5-9023-74C330CF800B.PNG" alt="たっちゃん家の日記" style="width:100%;border-radius:18px;"></div></section>
-<section class="section" id="room"><h2>🛒 たっちゃんのおすすめ</h2><div class="panel"><h3>お気に入り、集めてみたで！</h3><p>たっちゃん家が気になるものを少しずつ紹介するで。</p><p class="tiny">※ 楽天ROOMのリンクは、URLが決まったら追加します。</p></div></section>
-<section class="section" id="fortune"><h2>🔮 たっちゃん干支占い</h2><div class="panel"><h3>今日の運勢、どないやろ？</h3><p>12干支の占いをお届け。信じる信じないは自分次第！</p></div></section>
-<section class="section" id="cooking"><h2>🍳 もものお料理レッスンノート</h2><div class="panel"><h3>もも、今日もお料理に挑戦！</h3><p>料理教室で習ったことや、おいしい挑戦を少しずつ紹介するで。</p></div></section>
-<section class="section" id="stamps"><h2>💬 たっちゃん家のLINEスタンプ</h2><div class="panel"><h3>会話にたっちゃん家を！</h3><p>LINEスタンプ・絵文字も見ていってな〜。</p><a class="link" href="https://line.me/S/shop/sticker/author/6575796" target="_blank" rel="noopener noreferrer">LINEスタンプを見る ↗</a></div></section>
-<section class="section" id="yuri"><h2>🍽️ 食べ歩き yuri</h2><div class="panel"><h3>南大阪・堺・泉州のおいしいもん</h3><p>気になるお店や、おいしい発見を少しずつ紹介するで。</p><p class="tiny">※ 食べ歩き情報へのリンクは、これから追加します。</p></div></section>
-</main><footer>🐾 たっちゃん家<br>これからも、ぼちぼちよろしくな〜！</footer>
+
+<header>
+<nav>
+<a class="brand" href="#top">🐾 たっちゃん家</a>
+
+<div class="navlinks">
+<a href="#family">家族紹介</a>
+<a href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer">日記</a>
+<a href="#room">おすすめ</a>
+<a href="#fortune">占い</a>
+<a href="#cooking">お料理</a>
+<a href="#stamps">LINE</a>
+<a href="#yuri">食べ歩き</a>
+</div>
+</nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+<div class="eyebrow">🐾 🏠 🐾</div>
+
+<h1>
+たっちゃん家へ<br>
+ようこそ！
+</h1>
+
+<p>
+まいど〜！ 猫たち家族のゆるっとした毎日をお届けするで〜。<br>
+笑ったり、のんびりしたり。気軽に遊びに来てな！
+</p>
+
+<img
+class="hero-image"
+src="tacchan-family.png"
+alt="たっちゃん家の家族がソファに集合したイラスト"
+>
+
+<a class="cta" href="#family">家族に会いにいく ↓</a>
+</section>
+
+
+<section class="section" id="family">
+
+<h2>🐱 たっちゃん家の家族</h2>
+
+<p class="section-lead">
+家族4人とペット3匹。みんなそれぞれ個性たっぷりやで！
+</p>
+
+<div class="family-grid">
+
+<article class="profile">
+<img src="tatcchan.PNG" alt="父・たっちゃんの紹介画像" loading="eager">
+<h3>父・たっちゃん</h3>
+</article>
+
+<article class="profile">
+<img src="micchan.PNG" alt="母・みっちゃんの紹介画像" loading="lazy">
+<h3>母・みっちゃん</h3>
+</article>
+
+<article class="profile">
+<img src="riku.PNG" alt="長男・りくの紹介画像" loading="lazy">
+<h3>長男・りく</h3>
+</article>
+
+<article class="profile">
+<img src="momo.PNG" alt="長女・ももの紹介画像" loading="lazy">
+<h3>長女・もも</h3>
+</article>
+
+<article class="profile">
+<img src="ten.PNG" alt="白猫・てんの紹介画像" loading="lazy">
+<h3>てん 🐈</h3>
+</article>
+
+<article class="profile">
+<img src="ame.PNG" alt="黒猫・あめの紹介画像" loading="lazy">
+<h3>あめ 🐈‍⬛</h3>
+</article>
+
+<article class="profile">
+<img src="choco.PNG" alt="レオパ・ちょこの紹介画像" loading="lazy">
+<h3>ちょこ 🦎</h3>
+</article>
+
+</div>
+</section>
+
+
+<section class="section" id="room">
+
+<h2>🛒 たっちゃんのおすすめ</h2>
+
+<div class="panel">
+<h3>お気に入り、集めてみたで！</h3>
+<p>たっちゃん家が気になるものを少しずつ紹介するで。</p>
+<p class="tiny">※ 楽天ROOMのリンクは、URLが決まったら追加します。</p>
+</div>
+
+</section>
+
+
+<section class="section" id="fortune">
+
+<h2>🔮 たっちゃん干支占い</h2>
+
+<div class="panel">
+<h3>今日の運勢、どないやろ？</h3>
+<p>12干支の占いをお届け。信じる信じないは自分次第！</p>
+</div>
+
+</section>
+
+
+<section class="section" id="cooking">
+
+<h2>🍳 もものお料理レッスンノート</h2>
+
+<div class="panel">
+<h3>もも、今日もお料理に挑戦！</h3>
+<p>料理教室で習ったことや、おいしい挑戦を少しずつ紹介するで。</p>
+</div>
+
+</section>
+
+
+<section class="section" id="stamps">
+
+<h2>💬 たっちゃん家のLINEスタンプ</h2>
+
+<div class="panel">
+<h3>会話にたっちゃん家を！</h3>
+<p>LINEスタンプ・絵文字も見ていってな〜。</p>
+
+<a
+class="link"
+href="https://line.me/S/shop/sticker/author/6575796"
+target="_blank"
+rel="noopener noreferrer"
+>
+LINEスタンプを見る ↗
+</a>
+
+</div>
+</section>
+
+
+<section class="section" id="yuri">
+
+<h2>🍽️ 食べ歩き yuri</h2>
+
+<div class="panel">
+<h3>南大阪・堺・泉州のおいしいもん</h3>
+<p>気になるお店や、おいしい発見を少しずつ紹介するで。</p>
+<p class="tiny">※ 食べ歩き情報へのリンクは、これから追加します。</p>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+🐾 たっちゃん家<br>
+これからも、ぼちぼちよろしくな〜！
+</footer>
+
 </body>
 </html>
