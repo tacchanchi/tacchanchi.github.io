@@ -38,10 +38,10 @@ a{
   text-decoration:none;
 }
 
-
 /* ===== 全体 ===== */
 
 .wrap{
+  position:relative;
   width:min(100%,1000px);
   margin:auto;
   overflow:hidden;
@@ -53,7 +53,6 @@ a{
       #f7ead4 100%
     );
 }
-
 
 /* ===== TOP ===== */
 
@@ -81,7 +80,6 @@ a{
   border-radius:24px;
   box-shadow:0 7px 20px rgba(80,50,30,.13);
 }
-
 
 /* ===== ナビ ===== */
 
@@ -123,11 +121,11 @@ a{
   box-shadow:0 3px 9px rgba(70,45,30,.12);
 }
 
-
 /* ===== ごあいさつ ===== */
 
 .welcome{
-  padding:30px 20px 15px;
+  position:relative;
+  padding:38px 20px 25px;
   text-align:center;
 }
 
@@ -141,11 +139,11 @@ a{
   line-height:1.9;
 }
 
-
 /* ===== メインメニュー ===== */
 
 .menu{
-  padding:20px 12px 35px;
+  position:relative;
+  padding:28px 12px 45px;
 }
 
 .section-title{
@@ -163,13 +161,10 @@ a{
 .menu-card{
   position:relative;
   overflow:hidden;
-
   border-radius:20px;
   background:white;
   border:2px solid #f0d9bd;
-
   box-shadow:0 5px 14px rgba(85,55,35,.10);
-
   transition:.2s;
 }
 
@@ -183,12 +178,63 @@ a{
   object-fit:cover;
 }
 
+/* ===== 自然なひょっこり ===== */
+
+.natural-peek{
+  position:absolute;
+  z-index:5;
+  pointer-events:none;
+}
+
+.natural-peek img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* 左から */
+.peek-from-left{
+  left:-48px;
+}
+
+/* 右から */
+.peek-from-right{
+  right:-48px;
+}
+
+/* メニュー付近 */
+.peek-hinata{
+  width:118px;
+  bottom:-18px;
+  transform:rotate(3deg);
+}
+
+/* 家族紹介付近 */
+.peek-reo{
+  width:120px;
+  top:105px;
+  transform:rotate(-2deg);
+}
+
+/* ペット付近 */
+.peek-ren{
+  width:115px;
+  bottom:-10px;
+  transform:rotate(3deg);
+}
+
+/* お料理付近 */
+.peek-sora{
+  width:118px;
+  top:25px;
+  transform:rotate(-3deg);
+}
 
 /* ===== 家族 ===== */
 
 .family{
   position:relative;
-  padding:35px 15px;
+  padding:48px 15px 42px;
   background:#fffdf6;
 }
 
@@ -230,67 +276,11 @@ a{
   margin-top:8px;
 }
 
-
-/* ===== ひょっこり ===== */
-
-.peek-zone{
-  position:relative;
-  min-height:420px;
-  overflow:hidden;
-  padding:40px 55px;
-  text-align:center;
-
-  background:
-    linear-gradient(
-      #f8ead4,
-      #fff8e9
-    );
-}
-
-.peek-zone h2{
-  margin:0;
-  font-size:1.7rem;
-}
-
-.peek-zone p{
-  margin-top:6px;
-}
-
-.peek{
-  position:absolute;
-  width:125px;
-}
-
-.peek-left{
-  left:-28px;
-  bottom:25px;
-}
-
-.peek-right{
-  right:-25px;
-  top:95px;
-}
-
-.peek-right2{
-  right:-30px;
-  bottom:10px;
-}
-
-.peek-left2{
-  left:-35px;
-  top:120px;
-}
-
-.peek img{
-  width:100%;
-  height:auto;
-}
-
-
 /* ===== ペット ===== */
 
 .pets{
-  padding:35px 15px;
+  position:relative;
+  padding:48px 15px 48px;
   text-align:center;
   background:#fffdf8;
 }
@@ -306,6 +296,8 @@ a{
 }
 
 .pet{
+  position:relative;
+  z-index:2;
   background:white;
   border:2px solid #efdcc7;
   border-radius:18px;
@@ -323,15 +315,39 @@ a{
   margin-top:5px;
 }
 
+/* ===== お料理 ===== */
+
+.cooking-note{
+  position:relative;
+  padding:55px 65px 55px;
+  text-align:center;
+  background:#fff8e9;
+}
+
+.cooking-note h2{
+  position:relative;
+  z-index:2;
+  margin:0 0 10px;
+  font-size:1.55rem;
+}
+
+.cooking-note p{
+  position:relative;
+  z-index:2;
+  margin:0;
+  line-height:1.9;
+}
 
 /* ===== お問い合わせ ===== */
 
 .contact{
-  padding:35px 15px;
+  position:relative;
+  padding:40px 15px;
 }
 
 .contact-card{
   position:relative;
+  z-index:2;
   overflow:hidden;
   border-radius:24px;
   box-shadow:0 6px 18px rgba(80,50,30,.13);
@@ -341,11 +357,10 @@ a{
   width:100%;
 }
 
-
 /* ===== 最後 ===== */
 
 .goodbye{
-  padding:35px 20px;
+  padding:40px 20px;
   text-align:center;
 }
 
@@ -357,15 +372,11 @@ a{
   display:inline-block;
   margin-top:18px;
   padding:11px 25px;
-
   color:white;
   background:#a66d42;
-
   border-radius:999px;
-
   font-weight:900;
 }
-
 
 /* ===== footer ===== */
 
@@ -376,7 +387,6 @@ footer{
   font-size:.78rem;
   background:#ead7bc;
 }
-
 
 /* ===== PC ===== */
 
@@ -394,8 +404,11 @@ footer{
     justify-content:center;
   }
 
-}
+  .natural-peek{
+    width:145px;
+  }
 
+}
 
 /* ===== 小さいスマホ ===== */
 
@@ -409,23 +422,27 @@ footer{
     gap:8px;
   }
 
-  .peek{
-    width:110px;
+  .natural-peek{
+    width:105px;
+  }
+
+  .peek-from-left{
+    left:-43px;
+  }
+
+  .peek-from-right{
+    right:-43px;
   }
 
 }
 </style>
 </head>
 
-
 <body>
 
 <div class="wrap" id="top">
 
-
-<!-- =========================
-     TOP
-========================= -->
+<!-- TOP -->
 
 <section class="hero">
 
@@ -445,10 +462,7 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     ナビ
-========================= -->
+<!-- ナビ -->
 
 <nav class="nav">
 
@@ -489,10 +503,7 @@ footer{
 </nav>
 
 
-
-<!-- =========================
-     ごあいさつ
-========================= -->
+<!-- ごあいさつ -->
 
 <section class="welcome">
 
@@ -507,10 +518,7 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     メニュー
-========================= -->
+<!-- メニュー -->
 
 <section class="menu">
 
@@ -518,11 +526,7 @@ footer{
     🐾 たっちゃん家メニュー 🐾
   </h2>
 
-
   <div class="menu-grid">
-
-
-    <!-- 日記 -->
 
     <a
       class="menu-card"
@@ -530,58 +534,24 @@ footer{
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        src="diary.jpg"
-        alt="たっちゃん日記"
-      >
+      <img src="diary.jpg" alt="たっちゃん日記">
     </a>
-
-
-
-    <!-- 料理 -->
 
     <a
       class="menu-card"
       id="cooking"
       href="#cooking-note"
     >
-      <img
-        src="momo-cooking.jpg"
-        alt="もものお料理レッスンノート"
-      >
+      <img src="momo-cooking.jpg" alt="もものお料理レッスンノート">
     </a>
 
-
-
-    <!-- 楽天 -->
-
-    <div
-      class="menu-card"
-      id="room"
-    >
-      <img
-        src="rakuten-room.jpg"
-        alt="楽天ROOM"
-      >
+    <div class="menu-card" id="room">
+      <img src="rakuten-room.jpg" alt="楽天ROOM">
     </div>
 
-
-
-    <!-- 占い -->
-
-    <div
-      class="menu-card"
-      id="fortune"
-    >
-      <img
-        src="fortune.jpg"
-        alt="たっちゃん干支占い"
-      >
+    <div class="menu-card" id="fortune">
+      <img src="fortune.jpg" alt="たっちゃん干支占い">
     </div>
-
-
-
-    <!-- もぐもぐ -->
 
     <a
       class="menu-card"
@@ -590,15 +560,8 @@ footer{
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        src="mogumogu.jpg"
-        alt="もぐもぐ散歩日和"
-      >
+      <img src="mogumogu.jpg" alt="もぐもぐ散歩日和">
     </a>
-
-
-
-    <!-- LINE -->
 
     <a
       class="menu-card"
@@ -606,24 +569,27 @@ footer{
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        src="line.jpg"
-        alt="LINEスタンプと絵文字"
-      >
+      <img src="line.jpg" alt="LINEスタンプと絵文字">
     </a>
 
+  </div>
 
+  <!-- ここから自然にひょっこり -->
+  <div class="natural-peek peek-from-right peek-hinata">
+    <img src="peek-hinata.png" alt="">
   </div>
 
 </section>
 
 
-
-<!-- =========================
-     家族紹介
-========================= -->
+<!-- 家族紹介 -->
 
 <section class="family" id="family">
+
+  <!-- 左端から自然にひょっこり -->
+  <div class="natural-peek peek-from-left peek-reo">
+    <img src="peek-reo.png" alt="">
+  </div>
 
   <h2>🐾 たっちゃん家の紹介 🐾</h2>
 
@@ -632,148 +598,92 @@ footer{
     個性たっぷりのメンバーやで♪
   </p>
 
-
   <div class="family-grid">
-
 
     <div class="family-card">
       <img src="tatcchan.PNG" alt="たっちゃん">
       <strong>たっちゃん</strong>
     </div>
 
-
     <div class="family-card">
       <img src="micchan.PNG" alt="みっちゃん">
       <strong>みっちゃん</strong>
     </div>
-
 
     <div class="family-card">
       <img src="riku.PNG" alt="りく">
       <strong>りく</strong>
     </div>
 
-
     <div class="family-card">
       <img src="momo.PNG" alt="もも">
       <strong>もも</strong>
     </div>
-
 
     <div class="family-card">
       <img src="ten.PNG" alt="てん">
       <strong>てん</strong>
     </div>
 
-
     <div class="family-card">
       <img src="ame.PNG" alt="あめ">
       <strong>あめ</strong>
     </div>
-
 
     <div class="family-card">
       <img src="choco.PNG" alt="ちょこ">
       <strong>ちょこ</strong>
     </div>
 
-
   </div>
 
 </section>
 
 
-
-<!-- =========================
-     ひょっこり
-========================= -->
-
-<section class="peek-zone">
-
-  <h2>👀 ひょっこり</h2>
-
-  <p>
-    たっちゃん家のまわりには<br>
-    こんな仲間たちも♪
-  </p>
-
-
-  <div class="peek peek-left">
-    <img src="peek-hinata.png" alt="">
-  </div>
-
-
-  <div class="peek peek-right">
-    <img src="peek-reo.png" alt="">
-  </div>
-
-
-  <div class="peek peek-left2">
-    <img src="peek-ren.png" alt="">
-  </div>
-
-
-  <div class="peek peek-right2">
-    <img src="peek-sora.png" alt="">
-  </div>
-
-</section>
-
-
-
-<!-- =========================
-     ペット
-========================= -->
+<!-- ペット -->
 
 <section class="pets">
 
   <h2>🐾 ペットたちもおるで〜</h2>
 
-
   <div class="pet-grid">
 
-
     <div class="pet">
-      <img
-        src="pet-ten.png"
-        alt="てん"
-      >
+      <img src="pet-ten.png" alt="てん">
       <strong>てん</strong>
     </div>
 
-
     <div class="pet">
-      <img
-        src="pet-ame.png"
-        alt="あめ"
-      >
+      <img src="pet-ame.png" alt="あめ">
       <strong>あめ</strong>
     </div>
 
-
     <div class="pet">
-      <img
-        src="pet-choco.png"
-        alt="ちょこ"
-      >
+      <img src="pet-choco.png" alt="ちょこ">
       <strong>ちょこ</strong>
     </div>
 
+  </div>
 
+  <!-- 右端から自然にひょっこり -->
+  <div class="natural-peek peek-from-right peek-ren">
+    <img src="peek-ren.png" alt="">
   </div>
 
 </section>
 
 
-
-<!-- =========================
-     お料理メモ
-========================= -->
+<!-- お料理 -->
 
 <section
-  class="welcome"
+  class="cooking-note"
   id="cooking-note"
 >
+
+  <!-- 左端から自然にひょっこり -->
+  <div class="natural-peek peek-from-left peek-sora">
+    <img src="peek-sora.png" alt="">
+  </div>
 
   <h2>🍳 もものお料理レッスンノート</h2>
 
@@ -785,41 +695,33 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     お問い合わせ
-========================= -->
+<!-- お問い合わせ -->
 
 <section class="contact">
 
   <div class="contact-card">
-
     <img
       src="contact.jpg"
       alt="お問い合わせ"
     >
-
   </div>
 
 </section>
 
 
-
-<!-- =========================
-     LAST
-========================= -->
+<!-- LAST -->
 
 <section class="goodbye">
 
-  <h2>今日も遊びに来てくれておーきに！🐾</h2>
+  <h2>
+    今日も遊びに来てくれておーきに！🐾
+  </h2>
 
   <p>
     たっちゃん家は今日も<br>
     ぼちぼち、のんびり営業中。<br><br>
-
     また遊びに来てな〜♪
   </p>
-
 
   <a
     class="top-button"
@@ -831,7 +733,6 @@ footer{
 </section>
 
 
-
 <footer>
 
   🐾 たっちゃん家 🐾
@@ -840,7 +741,6 @@ footer{
   © 2026 Tacchan Family
 
 </footer>
-
 
 </div>
 
