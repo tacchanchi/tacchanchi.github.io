@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#fff7e8">
+<meta name="theme-color" content="#fff8ea">
 
 <title>たっちゃん家｜公式ホームページ</title>
 
@@ -18,8 +18,8 @@ html{
 
 body{
   margin:0;
-  color:#533528;
-  background:#fff8e9;
+  color:#56392c;
+  background:#f4e7d2;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -38,66 +38,71 @@ a{
   text-decoration:none;
 }
 
-/* ===== 全体 ===== */
-
 .wrap{
   position:relative;
-  width:min(100%,1000px);
+  width:min(100%,900px);
   margin:auto;
   overflow:hidden;
   background:
     linear-gradient(
       180deg,
-      #fff8e9 0%,
-      #fffdf7 45%,
-      #f7ead4 100%
+      #fff9ec 0%,
+      #fffdf8 45%,
+      #fff7e8 78%,
+      #f2dfc1 100%
     );
 }
 
-/* ===== TOP ===== */
+
+/* =========================
+   TOP
+========================= */
 
 .hero{
   position:relative;
-  padding:18px 14px 8px;
+  padding:14px 14px 8px;
   text-align:center;
 }
 
 .hero-title{
-  margin:4px 0 5px;
-  font-size:clamp(2rem,9vw,4rem);
+  margin:4px 0;
+  font-size:clamp(2rem,8vw,3.5rem);
   font-weight:900;
-  letter-spacing:.03em;
 }
 
 .hero-sub{
-  margin:0 0 14px;
-  font-size:.9rem;
+  margin:0 0 12px;
+  font-size:.82rem;
   font-weight:700;
+  line-height:1.6;
 }
 
-.hero img{
+.hero-main{
   width:100%;
-  border-radius:24px;
-  box-shadow:0 7px 20px rgba(80,50,30,.13);
+  border-radius:22px;
+  box-shadow:0 5px 16px rgba(80,50,30,.12);
 }
 
-/* ===== ナビ ===== */
+
+/* =========================
+   ナビ
+========================= */
 
 .nav{
   position:sticky;
   top:0;
-  z-index:20;
+  z-index:30;
 
   display:flex;
-  gap:8px;
+  gap:4px;
 
-  padding:10px 10px 12px;
+  padding:8px 6px;
 
   overflow-x:auto;
   scrollbar-width:none;
 
-  background:rgba(255,248,233,.96);
-  border-bottom:1px solid #ead5bd;
+  background:rgba(255,249,236,.96);
+  border-bottom:1px solid #ead8c1;
   backdrop-filter:blur(8px);
 }
 
@@ -106,66 +111,161 @@ a{
 }
 
 .nav a{
-  flex:0 0 78px;
+  flex:0 0 62px;
   text-align:center;
-  font-size:.72rem;
+  font-size:.61rem;
   font-weight:800;
 }
 
 .nav img{
-  width:58px;
-  height:58px;
-  margin:0 auto 4px;
+  width:44px;
+  height:44px;
+  margin:0 auto 3px;
   object-fit:cover;
-  border-radius:15px;
-  box-shadow:0 3px 9px rgba(70,45,30,.12);
+  border-radius:11px;
+  box-shadow:0 2px 6px rgba(70,45,30,.10);
 }
 
-/* ===== ごあいさつ ===== */
+
+/* =========================
+   共通装飾
+========================= */
+
+.paw{
+  position:absolute;
+  pointer-events:none;
+  opacity:.13;
+  font-size:18px;
+  z-index:1;
+}
+
+.paw-a{
+  top:15px;
+  right:22px;
+  transform:rotate(18deg);
+}
+
+.paw-b{
+  bottom:15px;
+  left:22px;
+  transform:rotate(-18deg);
+}
+
+
+/* =========================
+   ひょっこり
+========================= */
+
+.peek{
+  position:absolute;
+  z-index:5;
+  pointer-events:none;
+}
+
+.peek img{
+  width:100%;
+  height:auto;
+}
+
+.peek-welcome{
+  width:58px;
+  left:-18px;
+  bottom:5px;
+  transform:rotate(4deg);
+}
+
+.peek-menu{
+  width:62px;
+  right:-21px;
+  top:70px;
+  transform:rotate(-3deg);
+}
+
+.peek-family-left{
+  width:58px;
+  left:-20px;
+  top:85px;
+  transform:rotate(3deg);
+}
+
+.peek-family-right{
+  width:57px;
+  right:-19px;
+  bottom:35px;
+  transform:rotate(-3deg);
+}
+
+.peek-cooking{
+  width:55px;
+  left:-17px;
+  bottom:4px;
+}
+
+.peek-goodbye{
+  width:55px;
+  right:-16px;
+  top:12px;
+}
+
+
+/* =========================
+   ごあいさつ
+========================= */
 
 .welcome{
   position:relative;
-  padding:38px 20px 25px;
+  padding:30px 45px 28px;
   text-align:center;
 }
 
 .welcome h2{
-  margin:0 0 8px;
-  font-size:1.65rem;
+  position:relative;
+  z-index:2;
+  margin:0 0 7px;
+  font-size:1.45rem;
 }
 
 .welcome p{
+  position:relative;
+  z-index:2;
   margin:0;
+  font-size:.86rem;
   line-height:1.9;
 }
 
-/* ===== メインメニュー ===== */
+
+/* =========================
+   メニュー
+========================= */
 
 .menu{
   position:relative;
-  padding:28px 12px 45px;
+  padding:22px 24px 38px;
 }
 
 .section-title{
+  position:relative;
+  z-index:2;
+  margin:0 0 15px;
   text-align:center;
-  margin:0 0 18px;
-  font-size:1.7rem;
+  font-size:1.4rem;
 }
 
 .menu-grid{
+  position:relative;
+  z-index:2;
+
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
 }
 
 .menu-card{
-  position:relative;
   overflow:hidden;
-  border-radius:20px;
-  background:white;
-  border:2px solid #f0d9bd;
-  box-shadow:0 5px 14px rgba(85,55,35,.10);
-  transition:.2s;
+  background:#fff;
+  border:1px solid #ead4b8;
+  border-radius:14px;
+  box-shadow:0 3px 8px rgba(80,50,30,.07);
 }
 
 .menu-card:active{
@@ -178,269 +278,303 @@ a{
   object-fit:cover;
 }
 
-/* ===== 自然なひょっこり ===== */
 
-.natural-peek{
-  position:absolute;
-  z-index:5;
-  pointer-events:none;
-}
-
-.natural-peek img{
-  width:100%;
-  height:auto;
-  display:block;
-}
-
-/* 左から */
-.peek-from-left{
-  left:-48px;
-}
-
-/* 右から */
-.peek-from-right{
-  right:-48px;
-}
-
-/* メニュー付近 */
-.peek-hinata{
-  width:118px;
-  bottom:-18px;
-  transform:rotate(3deg);
-}
-
-/* 家族紹介付近 */
-.peek-reo{
-  width:120px;
-  top:105px;
-  transform:rotate(-2deg);
-}
-
-/* ペット付近 */
-.peek-ren{
-  width:115px;
-  bottom:-10px;
-  transform:rotate(3deg);
-}
-
-/* お料理付近 */
-.peek-sora{
-  width:118px;
-  top:25px;
-  transform:rotate(-3deg);
-}
-
-/* ===== 家族 ===== */
+/* =========================
+   家族紹介
+========================= */
 
 .family{
   position:relative;
-  padding:48px 15px 42px;
-  background:#fffdf6;
+  padding:34px 25px 38px;
+  background:rgba(255,253,247,.70);
 }
 
 .family h2{
+  position:relative;
+  z-index:2;
+  margin:0 0 5px;
   text-align:center;
-  margin:0 0 8px;
-  font-size:1.8rem;
+  font-size:1.45rem;
 }
 
 .family-lead{
+  position:relative;
+  z-index:2;
+  margin:0 0 17px;
   text-align:center;
-  margin:0 0 22px;
+  font-size:.8rem;
+  line-height:1.7;
 }
 
 .family-grid{
+  position:relative;
+  z-index:2;
+
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:13px;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px;
 }
 
 .family-card{
-  padding:10px;
+  padding:5px;
   text-align:center;
-  background:white;
-  border:2px solid #efdbc5;
-  border-radius:20px;
-  box-shadow:0 4px 12px rgba(80,50,30,.08);
+
+  background:rgba(255,255,255,.92);
+
+  border:1px solid #ead8c3;
+  border-radius:12px;
+
+  box-shadow:0 2px 7px rgba(80,50,30,.06);
 }
 
 .family-card img{
   width:100%;
   aspect-ratio:1/1;
   object-fit:contain;
-  border-radius:14px;
+  border-radius:8px;
 }
 
 .family-card strong{
   display:block;
-  margin-top:8px;
+  margin-top:3px;
+  font-size:.66rem;
 }
 
-/* ===== ペット ===== */
 
-.pets{
+/* =========================
+   ペットが自然におる場所
+========================= */
+
+.pet-corner{
   position:relative;
-  padding:48px 15px 48px;
+  min-height:105px;
+  padding:25px 75px 22px;
   text-align:center;
-  background:#fffdf8;
 }
 
-.pets h2{
-  margin:0 0 20px;
-}
-
-.pet-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-}
-
-.pet{
+.pet-message{
   position:relative;
   z-index:2;
-  background:white;
-  border:2px solid #efdcc7;
-  border-radius:18px;
-  padding:8px;
+
+  display:inline-block;
+
+  padding:8px 13px;
+
+  font-size:.76rem;
+  font-weight:700;
+  line-height:1.6;
+
+  background:rgba(255,255,255,.55);
+  border-radius:999px;
 }
 
-.pet img{
-  width:100%;
-  aspect-ratio:1/1;
-  object-fit:contain;
+.pet-float{
+  position:absolute;
+  pointer-events:none;
+  z-index:3;
 }
 
-.pet strong{
-  display:block;
-  margin-top:5px;
+.pet-ten{
+  width:54px;
+  left:13px;
+  bottom:5px;
+  transform:rotate(-4deg);
 }
 
-/* ===== お料理 ===== */
+.pet-ame{
+  width:50px;
+  right:15px;
+  top:5px;
+  transform:rotate(3deg);
+}
+
+.pet-choco{
+  width:42px;
+  right:57px;
+  bottom:0;
+}
+
+
+/* =========================
+   お料理
+========================= */
 
 .cooking-note{
   position:relative;
-  padding:55px 65px 55px;
+  padding:33px 52px;
   text-align:center;
-  background:#fff8e9;
 }
 
 .cooking-note h2{
   position:relative;
   z-index:2;
-  margin:0 0 10px;
-  font-size:1.55rem;
+  margin:0 0 8px;
+  font-size:1.2rem;
 }
 
 .cooking-note p{
   position:relative;
   z-index:2;
   margin:0;
-  line-height:1.9;
+  font-size:.8rem;
+  line-height:1.8;
 }
 
-/* ===== お問い合わせ ===== */
+
+/* =========================
+   お問い合わせ
+========================= */
 
 .contact{
   position:relative;
-  padding:40px 15px;
+  padding:27px 30px 32px;
 }
 
 .contact-card{
   position:relative;
   z-index:2;
+
+  max-width:620px;
+  margin:auto;
+
   overflow:hidden;
-  border-radius:24px;
-  box-shadow:0 6px 18px rgba(80,50,30,.13);
+  border-radius:17px;
+
+  box-shadow:0 4px 12px rgba(80,50,30,.10);
 }
 
 .contact-card img{
   width:100%;
 }
 
-/* ===== 最後 ===== */
+
+/* =========================
+   LAST
+========================= */
 
 .goodbye{
-  padding:40px 20px;
+  position:relative;
+  padding:34px 48px 38px;
   text-align:center;
 }
 
 .goodbye h2{
-  margin:0 0 8px;
+  position:relative;
+  z-index:2;
+  margin:0 0 7px;
+  font-size:1.1rem;
+}
+
+.goodbye p{
+  position:relative;
+  z-index:2;
+  margin:0;
+  font-size:.8rem;
+  line-height:1.8;
 }
 
 .top-button{
+  position:relative;
+  z-index:6;
+
   display:inline-block;
-  margin-top:18px;
-  padding:11px 25px;
-  color:white;
+
+  margin-top:15px;
+  padding:9px 20px;
+
+  color:#fff;
   background:#a66d42;
+
   border-radius:999px;
+
+  font-size:.76rem;
   font-weight:900;
+
+  box-shadow:0 3px 8px rgba(80,50,30,.14);
 }
 
-/* ===== footer ===== */
+
+/* =========================
+   footer
+========================= */
 
 footer{
-  padding:25px 15px 35px;
+  padding:19px 15px 25px;
   text-align:center;
   color:#72594a;
-  font-size:.78rem;
+  font-size:.68rem;
   background:#ead7bc;
 }
 
-/* ===== PC ===== */
 
-@media(min-width:700px){
+/* =========================
+   小さいスマホ
+========================= */
+
+@media(max-width:390px){
+
+  .menu{
+    padding-left:18px;
+    padding-right:18px;
+  }
 
   .menu-grid{
-    grid-template-columns:repeat(3,1fr);
+    gap:6px;
+  }
+
+  .family{
+    padding-left:18px;
+    padding-right:18px;
   }
 
   .family-grid{
-    grid-template-columns:repeat(4,1fr);
+    gap:5px;
   }
+
+  .family-card{
+    padding:4px;
+  }
+
+  .family-card strong{
+    font-size:.62rem;
+  }
+
+}
+
+
+/* =========================
+   PC
+========================= */
+
+@media(min-width:700px){
 
   .nav{
     justify-content:center;
   }
 
-  .natural-peek{
-    width:145px;
+  .menu{
+    padding-left:70px;
+    padding-right:70px;
   }
 
-}
-
-/* ===== 小さいスマホ ===== */
-
-@media(max-width:390px){
-
-  .menu-grid{
-    gap:8px;
+  .family{
+    padding-left:70px;
+    padding-right:70px;
   }
 
   .family-grid{
-    gap:8px;
-  }
-
-  .natural-peek{
-    width:105px;
-  }
-
-  .peek-from-left{
-    left:-43px;
-  }
-
-  .peek-from-right{
-    right:-43px;
+    grid-template-columns:repeat(7,1fr);
   }
 
 }
 </style>
 </head>
 
+
 <body>
 
 <div class="wrap" id="top">
+
 
 <!-- TOP -->
 
@@ -455,6 +589,7 @@ footer{
   </p>
 
   <img
+    class="hero-main"
     src="tacchan-family.png"
     alt="たっちゃん家"
   >
@@ -480,7 +615,7 @@ footer{
     日記
   </a>
 
-  <a href="#cooking">
+  <a href="#cooking-note">
     <img src="nav-momo-cooking.png" alt="">
     お料理
   </a>
@@ -506,6 +641,12 @@ footer{
 <!-- ごあいさつ -->
 
 <section class="welcome">
+
+  <span class="paw paw-a">🐾</span>
+
+  <div class="peek peek-welcome">
+    <img src="peek-hinata.png" alt="">
+  </div>
 
   <h2>まいど〜！🐾</h2>
 
@@ -539,17 +680,22 @@ footer{
 
     <a
       class="menu-card"
-      id="cooking"
       href="#cooking-note"
     >
       <img src="momo-cooking.jpg" alt="もものお料理レッスンノート">
     </a>
 
-    <div class="menu-card" id="room">
+    <div
+      class="menu-card"
+      id="room"
+    >
       <img src="rakuten-room.jpg" alt="楽天ROOM">
     </div>
 
-    <div class="menu-card" id="fortune">
+    <div
+      class="menu-card"
+      id="fortune"
+    >
       <img src="fortune.jpg" alt="たっちゃん干支占い">
     </div>
 
@@ -574,9 +720,8 @@ footer{
 
   </div>
 
-  <!-- ここから自然にひょっこり -->
-  <div class="natural-peek peek-from-right peek-hinata">
-    <img src="peek-hinata.png" alt="">
+  <div class="peek peek-menu">
+    <img src="peek-reo.png" alt="">
   </div>
 
 </section>
@@ -584,18 +729,28 @@ footer{
 
 <!-- 家族紹介 -->
 
-<section class="family" id="family">
+<section
+  class="family"
+  id="family"
+>
 
-  <!-- 左端から自然にひょっこり -->
-  <div class="natural-peek peek-from-left peek-reo">
-    <img src="peek-reo.png" alt="">
+  <span class="paw paw-b">🐾</span>
+
+  <div class="peek peek-family-left">
+    <img src="peek-ren.png" alt="">
   </div>
 
-  <h2>🐾 たっちゃん家の紹介 🐾</h2>
+  <div class="peek peek-family-right">
+    <img src="peek-sora.png" alt="">
+  </div>
+
+  <h2>
+    🐾 たっちゃん家の紹介 🐾
+  </h2>
 
   <p class="family-lead">
     家族4人＋ペット3匹。<br>
-    個性たっぷりのメンバーやで♪
+    今日もみんな自由に過ごしてます♪
   </p>
 
   <div class="family-grid">
@@ -640,34 +795,34 @@ footer{
 </section>
 
 
-<!-- ペット -->
+<!--
+  ペット専用コーナーではなく、
+  ページの途中に自然に登場
+-->
 
-<section class="pets">
+<section class="pet-corner">
 
-  <h2>🐾 ペットたちもおるで〜</h2>
+  <img
+    class="pet-float pet-ten"
+    src="pet-ten.png"
+    alt=""
+  >
 
-  <div class="pet-grid">
+  <img
+    class="pet-float pet-ame"
+    src="pet-ame.png"
+    alt=""
+  >
 
-    <div class="pet">
-      <img src="pet-ten.png" alt="てん">
-      <strong>てん</strong>
-    </div>
+  <img
+    class="pet-float pet-choco"
+    src="pet-choco.png"
+    alt=""
+  >
 
-    <div class="pet">
-      <img src="pet-ame.png" alt="あめ">
-      <strong>あめ</strong>
-    </div>
-
-    <div class="pet">
-      <img src="pet-choco.png" alt="ちょこ">
-      <strong>ちょこ</strong>
-    </div>
-
-  </div>
-
-  <!-- 右端から自然にひょっこり -->
-  <div class="natural-peek peek-from-right peek-ren">
-    <img src="peek-ren.png" alt="">
+  <div class="pet-message">
+    てん・あめ・ちょこも<br>
+    そのへんでのんびりしてるで〜🐾
   </div>
 
 </section>
@@ -680,12 +835,13 @@ footer{
   id="cooking-note"
 >
 
-  <!-- 左端から自然にひょっこり -->
-  <div class="natural-peek peek-from-left peek-sora">
-    <img src="peek-sora.png" alt="">
+  <div class="peek peek-cooking">
+    <img src="peek-night.png" alt="">
   </div>
 
-  <h2>🍳 もものお料理レッスンノート</h2>
+  <h2>
+    🍳 もものお料理レッスンノート
+  </h2>
 
   <p>
     料理教室で習ったことを記録中♪<br>
@@ -700,10 +856,12 @@ footer{
 <section class="contact">
 
   <div class="contact-card">
+
     <img
       src="contact.jpg"
       alt="お問い合わせ"
     >
+
   </div>
 
 </section>
@@ -712,6 +870,10 @@ footer{
 <!-- LAST -->
 
 <section class="goodbye">
+
+  <div class="peek peek-goodbye">
+    <img src="peek-hinata.png" alt="">
+  </div>
 
   <h2>
     今日も遊びに来てくれておーきに！🐾
@@ -734,13 +896,11 @@ footer{
 
 
 <footer>
-
   🐾 たっちゃん家 🐾
   <br>
-
   © 2026 Tacchan Family
-
 </footer>
+
 
 </div>
 
