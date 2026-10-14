@@ -141,7 +141,8 @@ footer{position:relative;padding:20px 15px 26px;text-align:center;color:#72594a;
 <article class="recipe-card"><span class="tag">体験レッスン</span><h4>🍖 照り焼きハンバーグ</h4><p>甘辛い照り焼き味のハンバーグ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card"><span class="tag">体験レッスン</span><h4>🎃 かぼちゃのポタージュ</h4><p>かぼちゃを使ったスープ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card" id="tonjiru-card"><img class="recipe-photo" src="momo-tonjiru-konbu.PNG" alt="豚汁（昆布だし）のレッスン画像" onerror="this.style.display='none'"><span class="tag">和食レッスン</span><h4>🥣 豚汁</h4><p>昆布だしで作った豚汁のレッスンノートやで♪</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料と作り方は、上のレッスン画像を見てな♪</div></details></article>
-<article class="recipe-card"><span class="tag">和食レッスン</span><h4>🥩 生姜焼き</h4><p>2種類を習ったよ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">味付けと手順は記録を確認してから掲載予定♪</div></details></article>
+<article class="recipe-card"><img class="recipe-photo" src="momo-nikujaga.png" alt="肉じゃがの写真" loading="lazy"><span class="tag">お料理アルバム</span><h4>🥔 肉じゃが</h4><p>ほっこりおいしそうな肉じゃが♪</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料や作り方は確認してから追加するで♪</div></details></article>
+<article class="recipe-card"><img class="recipe-photo" src="momo-shogayaki.png" alt="生姜焼きの写真" loading="lazy"><span class="tag">和食レッスン</span><h4>🥩 生姜焼き</h4><p>2種類を習ったよ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">味付けと手順は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card"><span class="tag">和食レッスン</span><h4>🥢 切り干し大根</h4><p>ごはんに合うおかず。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card"><span class="tag">次回のレッスン予定</span><h4>🐟 サバの味噌煮</h4><p>これから習う予定のお料理。</p><details><summary>レッスンメモを見る</summary><div class="details-body">レッスン後に記録するで♪</div></details></article>
 <article class="recipe-card"><span class="tag">次回のレッスン予定</span><h4>🥗 レンコンサラダ</h4><p>ハムを使ったサラダ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">レシピメモ：酢 大さじ1、ハム。その他の材料と手順は確認後に追加するで♪</div></details></article>
@@ -166,7 +167,7 @@ footer{position:relative;padding:20px 15px 26px;text-align:center;color:#72594a;
   for(const recipe of recipes){
    if(!recipe||typeof recipe.title!=='string')continue;
    const title=normalizeTitle(recipe.title);
-   if(!title||title.includes('肉じゃが')||title.includes('豚汁')||addedTitles.has(title))continue;
+   if(!title||title.includes('肉じゃが')||title.includes('豚汁')||title.includes('生姜焼き')||addedTitles.has(title))continue;
    const oldCard=Array.from(list.querySelectorAll('.recipe-card')).find(card=>{const h=card.querySelector('h4');return h&&normalizeTitle(h.textContent)===title;});
    if(oldCard)oldCard.remove();
    const card=document.createElement('article');card.className='recipe-card';
