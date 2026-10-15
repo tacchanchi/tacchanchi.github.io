@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#fff8ea">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#fff8ea" name="theme-color"/>
 <title>たっちゃん家｜公式ホームページ</title>
 <style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#56392c;background:#f4e7d2;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit}
@@ -70,37 +71,61 @@
 .goodbye-reo img{display:block;width:100%;height:auto}
 @media(max-width:390px){.goodbye-reo{left:3px;top:112px;width:46px}}
 @media(min-width:700px){.goodbye-reo{left:8%;top:100px;width:80px}}
+
+/* 10/15 指定6箇所のみ修正：旧位置指定より優先 */
+.family .peek-ren{left:0;top:22px;width:clamp(78px,20vw,112px)}
+.family-grid>.peek-sora{position:relative;right:auto;bottom:auto;top:auto;left:auto;transform:scaleX(-1);width:clamp(66px,17vw,100px);height:100%;display:flex;align-items:center;justify-content:center;justify-self:center;align-self:center;grid-column:4;grid-row:2}
+.family-grid>.peek-sora img{width:100%;height:auto;max-height:140px;object-fit:contain}
+.cooking-head .pet-ten{width:clamp(75px,19vw,110px);left:0;top:38px}
+.cooking-head .pet-ame{width:clamp(75px,19vw,110px);right:0;top:38px}
+.cooking-head{padding:28px clamp(78px,19vw,120px) 12px;min-height:168px}
+.cooking-head h2{font-size:clamp(.92rem,3.8vw,1.45rem)}
+.lesson-heading{padding:0 108px 0 18px;min-height:125px}
+.lesson-heading .lesson-peek{right:0;width:clamp(82px,23vw,120px)}
+.message-area{position:relative;max-width:650px;margin:20px auto 0;padding-right:clamp(62px,17vw,95px)}
+.message-area .lesson-message{margin:0}
+.message-choco{position:absolute;right:0;bottom:-16px;width:clamp(58px,15vw,88px);height:auto;transform:scaleX(-1);pointer-events:none;z-index:3}
+.goodbye{padding-left:clamp(95px,25vw,145px);padding-right:clamp(24px,7vw,55px)}
+.goodbye-reo{left:0;top:54px;width:clamp(92px,24vw,140px);transform:none}
+@media(max-width:390px){
+ .family .peek-ren{width:78px;top:25px}
+ .family-grid>.peek-sora{width:68px}
+ .cooking-head{padding-left:75px;padding-right:75px}
+ .cooking-head .pet-ten,.cooking-head .pet-ame{width:73px;top:45px}
+ .lesson-heading{padding-right:92px;padding-left:8px}
+ .lesson-heading .lesson-peek{width:85px}
+ .goodbye-reo{width:95px;top:63px}
+}
 </style>
 </head>
 <body>
 <div class="wrap" id="top">
-<section class="hero"><h1 class="hero-title">🐾 たっちゃん家 🐾</h1><p class="hero-sub">猫たち家族のゆるっと日常をお届けする公式ホームページ</p><img class="hero-main" src="tacchan-family.png" alt="たっちゃん家"></section>
-<nav class="nav" aria-label="メインメニュー">
-<a href="#top"><img src="nav-top.png" alt="">TOP</a><a href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="nav-diary.png" alt="">日記</a><a href="#cooking-note"><img src="nav-momo-cooking.png" alt="">お料理</a><a href="https://room.rakuten.co.jp/tacchan_ossan_neko/items" target="_blank" rel="noopener noreferrer"><img src="nav-rakuten.png" alt="">楽天ROOM</a><a href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="nav-fortune.PNG" alt="">干支占い</a><a href="https://www.instagram.com/mogumogu_sanpobiyori/" target="_blank" rel="noopener noreferrer"><img src="nav-mogumogu.png" alt="">もぐもぐ</a>
+<section class="hero"><h1 class="hero-title">🐾 たっちゃん家 🐾</h1><p class="hero-sub">猫たち家族のゆるっと日常をお届けする公式ホームページ</p><img alt="たっちゃん家" class="hero-main" src="tacchan-family.png"/></section>
+<nav aria-label="メインメニュー" class="nav">
+<a href="#top"><img alt="" src="nav-top.png"/>TOP</a><a href="https://www.instagram.com/tacchan_ossan_neko/" rel="noopener noreferrer" target="_blank"><img alt="" src="nav-diary.png"/>日記</a><a href="#cooking-note"><img alt="" src="nav-momo-cooking.png"/>お料理</a><a href="https://room.rakuten.co.jp/tacchan_ossan_neko/items" rel="noopener noreferrer" target="_blank"><img alt="" src="nav-rakuten.png"/>楽天ROOM</a><a href="https://www.instagram.com/tacchan_ossan_neko/" rel="noopener noreferrer" target="_blank"><img alt="" src="nav-fortune.PNG"/>干支占い</a><a href="https://www.instagram.com/mogumogu_sanpobiyori/" rel="noopener noreferrer" target="_blank"><img alt="" src="nav-mogumogu.png"/>もぐもぐ</a>
 </nav>
-<section class="welcome"><span class="paw paw1">🐾</span><div class="peek peek-hinata"><img src="peek-hinata.png" alt=""></div><h2>まいど〜！🐾</h2><p>たっちゃん家へようこそ！<br>笑ったり、食べたり、ゴロゴロしたり。<br>家族のゆる〜い毎日をのぞいていってな♪</p></section>
+<section class="welcome"><span class="paw paw1">🐾</span><div class="peek peek-hinata"><img alt="" src="peek-hinata.png"/></div><h2>まいど〜！🐾</h2><p>たっちゃん家へようこそ！<br/>笑ったり、食べたり、ゴロゴロしたり。<br/>家族のゆる〜い毎日をのぞいていってな♪</p></section>
 <section class="menu"><span class="paw paw2">🐾</span><h2 class="section-title">🐾 たっちゃん家メニュー 🐾</h2><div class="menu-grid">
-<a class="menu-card" href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="diary.jpg" alt="たっちゃん日記"></a><a class="menu-card" href="#cooking-note"><img src="momo-cooking.jpg" alt="もものお料理レッスンノート"></a><a class="menu-card" id="room" href="https://room.rakuten.co.jp/tacchan_ossan_neko/items" target="_blank" rel="noopener noreferrer"><img src="rakuten-room.jpg" alt="楽天ROOM"></a><a class="menu-card" id="fortune" href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="fortune.jpg" alt="たっちゃん干支占い"></a><a class="menu-card" id="mogumogu" href="https://www.instagram.com/mogumogu_sanpobiyori/" target="_blank" rel="noopener noreferrer"><img src="mogumogu.jpg" alt="もぐもぐ散歩日和"></a><a class="menu-card" href="https://line.me/S/shop/sticker/author/6575796" target="_blank" rel="noopener noreferrer"><img src="line.jpg" alt="LINEスタンプと絵文字"></a>
+<a class="menu-card" href="https://www.instagram.com/tacchan_ossan_neko/" rel="noopener noreferrer" target="_blank"><img alt="たっちゃん日記" src="diary.jpg"/></a><a class="menu-card" href="#cooking-note"><img alt="もものお料理レッスンノート" src="momo-cooking.jpg"/></a><a class="menu-card" href="https://room.rakuten.co.jp/tacchan_ossan_neko/items" id="room" rel="noopener noreferrer" target="_blank"><img alt="楽天ROOM" src="rakuten-room.jpg"/></a><a class="menu-card" href="https://www.instagram.com/tacchan_ossan_neko/" id="fortune" rel="noopener noreferrer" target="_blank"><img alt="たっちゃん干支占い" src="fortune.jpg"/></a><a class="menu-card" href="https://www.instagram.com/mogumogu_sanpobiyori/" id="mogumogu" rel="noopener noreferrer" target="_blank"><img alt="もぐもぐ散歩日和" src="mogumogu.jpg"/></a><a class="menu-card" href="https://line.me/S/shop/sticker/author/6575796" rel="noopener noreferrer" target="_blank"><img alt="LINEスタンプと絵文字" src="line.jpg"/></a>
 </div></section>
-<section class="family" id="family"><div class="peek peek-ren"><img src="peek-ren.png" alt=""></div><div class="peek peek-sora"><img src="peek-sora.png" alt=""></div><h2>🐾 たっちゃん家の紹介 🐾</h2><p class="family-lead">家族4人＋ペット3匹。<br>今日もみんな自由に過ごしてます♪</p><div class="family-grid">
-<div class="family-card"><img src="tatcchan.PNG" alt="たっちゃん"><strong>たっちゃん</strong></div><div class="family-card"><img src="micchan.PNG" alt="みっちゃん"><strong>みっちゃん</strong></div><div class="family-card"><img src="riku.PNG" alt="りく"><strong>りく</strong></div><div class="family-card"><img src="momo.PNG" alt="もも"><strong>もも</strong></div><div class="family-card"><img src="ten.PNG" alt="てん"><strong>てん</strong></div><div class="family-card"><img src="ame.PNG" alt="あめ"><strong>あめ</strong></div><div class="family-card"><img src="choco.PNG" alt="ちょこ"><strong>ちょこ</strong></div>
-</div></section>
-
-<section class="cooking-note" id="cooking-note"><span class="paw paw3">🐾</span><div class="cooking-head"><img class="pet pet-ten" src="pet-ten.png" alt=""><img class="pet pet-ame" src="pet-ame.png" alt=""><h2>🍳 もものお料理レッスンノート</h2><p class="intro">料理教室で習ったことを記録中♪<br>おいしく作れるように、もも頑張るで〜！</p></div>
-<img class="cooking-banner" src="momo-cooking.jpg" alt="もものお料理レッスンノート"><div class="lesson-heading"><img class="lesson-choco" src="pet-choco.png" alt="ちょこ"><h3 class="lesson-title">📒 習ったお料理</h3><img class="lesson-peek" src="peek-night.png" alt=""></div><p class="lesson-note">料理名を見て「レッスンメモを見る」を押してな♪<br>分量や手順は確認できたものから追加するで！</p>
+<section class="family" id="family"><div class="peek peek-ren"><img alt="" src="peek-ren.png"/></div><h2>🐾 たっちゃん家の紹介 🐾</h2><p class="family-lead">家族4人＋ペット3匹。<br/>今日もみんな自由に過ごしてます♪</p><div class="family-grid">
+<div class="family-card"><img alt="たっちゃん" src="tatcchan.PNG"/><strong>たっちゃん</strong></div><div class="family-card"><img alt="みっちゃん" src="micchan.PNG"/><strong>みっちゃん</strong></div><div class="family-card"><img alt="りく" src="riku.PNG"/><strong>りく</strong></div><div class="family-card"><img alt="もも" src="momo.PNG"/><strong>もも</strong></div><div class="family-card"><img alt="てん" src="ten.PNG"/><strong>てん</strong></div><div class="family-card"><img alt="あめ" src="ame.PNG"/><strong>あめ</strong></div><div class="family-card"><img alt="ちょこ" src="choco.PNG"/><strong>ちょこ</strong></div>
+<div class="peek peek-sora"><img alt="" src="peek-sora.png"/></div></div></section>
+<section class="cooking-note" id="cooking-note"><span class="paw paw3">🐾</span><div class="cooking-head"><img alt="" class="pet pet-ten" src="pet-ten.png"/><img alt="" class="pet pet-ame" src="pet-ame.png"/><h2>🍳 もものお料理レッスンノート</h2><p class="intro">料理教室で習ったことを記録中♪<br/>おいしく作れるように、もも頑張るで〜！</p></div>
+<img alt="もものお料理レッスンノート" class="cooking-banner" src="momo-cooking.jpg"/><div class="lesson-heading"><h3 class="lesson-title">📒 習ったお料理</h3><img alt="" class="lesson-peek" src="peek-night.png"/></div><p class="lesson-note">料理名を見て「レッスンメモを見る」を押してな♪<br/>分量や手順は確認できたものから追加するで！</p>
 <div class="recipe-grid" id="recipe-list">
 <article class="recipe-card"><span class="tag">体験レッスン</span><h4>🍖 照り焼きハンバーグ</h4><p>甘辛い照り焼き味のハンバーグ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card"><span class="tag">体験レッスン</span><h4>🎃 かぼちゃのポタージュ</h4><p>かぼちゃを使ったスープ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
-<article class="recipe-card" id="tonjiru-card"><img class="recipe-photo" src="momo-tonjiru-konbu.PNG" alt="豚汁（昆布だし）のレッスン画像" onerror="this.style.display='none'"><span class="tag">和食レッスン</span><h4>🥣 豚汁</h4><p>昆布だしで作った豚汁のレッスンノートやで♪</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料と作り方は、上のレッスン画像を見てな♪</div></details></article>
-<article class="recipe-card"><img class="recipe-photo" src="momo-nikujaga.png" alt="肉じゃがの写真" loading="lazy"><span class="tag">お料理アルバム</span><h4>🥔 肉じゃが</h4><p>ほっこりおいしそうな肉じゃが♪</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料や作り方は確認してから追加するで♪</div></details></article>
-<article class="recipe-card"><img class="recipe-photo" src="momo-shogayaki.png" alt="生姜焼きの写真" loading="lazy"><span class="tag">和食レッスン</span><h4>🥩 生姜焼き</h4><p>2種類を習ったよ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">味付けと手順は記録を確認してから掲載予定♪</div></details></article>
+<article class="recipe-card" id="tonjiru-card"><img alt="豚汁（昆布だし）のレッスン画像" class="recipe-photo" onerror="this.style.display='none'" src="momo-tonjiru-konbu.PNG"/><span class="tag">和食レッスン</span><h4>🥣 豚汁</h4><p>昆布だしで作った豚汁のレッスンノートやで♪</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料と作り方は、上のレッスン画像を見てな♪</div></details></article>
+<article class="recipe-card"><img alt="肉じゃがの写真" class="recipe-photo" loading="lazy" src="momo-nikujaga.png"/><span class="tag">お料理アルバム</span><h4>🥔 肉じゃが</h4><p>ほっこりおいしそうな肉じゃが♪</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料や作り方は確認してから追加するで♪</div></details></article>
+<article class="recipe-card"><img alt="生姜焼きの写真" class="recipe-photo" loading="lazy" src="momo-shogayaki.png"/><span class="tag">和食レッスン</span><h4>🥩 生姜焼き</h4><p>2種類を習ったよ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">味付けと手順は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card"><span class="tag">和食レッスン</span><h4>🥢 切り干し大根</h4><p>ごはんに合うおかず。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card"><span class="tag">次回のレッスン予定</span><h4>🐟 サバの味噌煮</h4><p>これから習う予定のお料理。</p><details><summary>レッスンメモを見る</summary><div class="details-body">レッスン後に記録するで♪</div></details></article>
 <article class="recipe-card"><span class="tag">次回のレッスン予定</span><h4>🥗 レンコンサラダ</h4><p>ハムを使ったサラダ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">レシピメモ：酢 大さじ1、ハム。その他の材料と手順は確認後に追加するで♪</div></details></article>
-</div><p class="lesson-message">🐱 もものひとこと<br>少しずつレパートリーを増やしていくで〜！<br>次のお料理もお楽しみに♪</p></section>
-<section class="contact"><div class="contact-card"><img src="contact.jpg" alt="お問い合わせ"></div></section>
-<section class="goodbye"><div class="goodbye-reo"><img src="peek-reo.png" alt="ひょっこり猫"></div><h2>今日も遊びに来てくれておーきに！🐾</h2><p>たっちゃん家は今日も<br>ぼちぼち、のんびり営業中。<br><br>また遊びに来てな〜♪</p><img class="baby-family" src="tacchan-baby-family.PNG" alt="赤ちゃんになったたっちゃん、みっちゃん、りく、もも" loading="lazy" onerror="this.style.display='none'"><a class="top-button" href="#top">🐾 TOPへ ↑</a></section>
-<footer>🐾 たっちゃん家 🐾<br>© 2026 Tacchan Family</footer>
+</div><div class="message-area"><p class="lesson-message">🐱 もものひとこと<br/>少しずつレパートリーを増やしていくで〜！<br/>次のお料理もお楽しみに♪</p><img alt="ちょこ" class="message-choco" src="pet-choco.png"/></div></section>
+<section class="contact"><div class="contact-card"><img alt="お問い合わせ" src="contact.jpg"/></div></section>
+<section class="goodbye"><div class="goodbye-reo"><img alt="ひょっこり猫" src="peek-reo.png"/></div><h2>今日も遊びに来てくれておーきに！🐾</h2><p>たっちゃん家は今日も<br/>ぼちぼち、のんびり営業中。<br/><br/>また遊びに来てな〜♪</p><img alt="赤ちゃんになったたっちゃん、みっちゃん、りく、もも" class="baby-family" loading="lazy" onerror="this.style.display='none'" src="tacchan-baby-family.PNG"/><a class="top-button" href="#top">🐾 TOPへ ↑</a></section>
+<footer>🐾 たっちゃん家 🐾<br/>© 2026 Tacchan Family</footer>
 </div>
 <script>
 (async function(){
