@@ -6,137 +6,88 @@
 <meta name="theme-color" content="#fff8ea">
 <title>たっちゃん家｜公式ホームページ</title>
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;color:#56392c;background:#f4e7d2;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-button{font:inherit}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#56392c;background:#f4e7d2;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit}
 .wrap{position:relative;width:min(100%,900px);margin:auto;overflow:hidden;background:linear-gradient(180deg,#fff9ec 0%,#fffdf8 46%,#fff8eb 78%,#f1dfc3 100%)}
-.hero{padding:14px 14px 8px;text-align:center}
-.hero-title{margin:4px 0;font-size:clamp(2rem,8vw,3.5rem);font-weight:900}
-.hero-sub{margin:0 0 12px;font-size:.82rem;font-weight:700;line-height:1.6}
-.hero-main{width:100%;border-radius:22px;box-shadow:0 5px 16px #50321e1f}
-.nav{position:sticky;top:0;z-index:30;display:flex;gap:4px;padding:8px 6px;overflow-x:auto;scrollbar-width:none;background:#fff9ecf5;border-bottom:1px solid #ead8c1;backdrop-filter:blur(8px)}
-.nav::-webkit-scrollbar{display:none}
-.nav a{flex:1 0 56px;text-align:center;font-size:.58rem;font-weight:800}
-.nav img{width:42px;height:42px;margin:0 auto 3px;object-fit:cover;border-radius:10px;box-shadow:0 2px 6px #462d1a1a}
-.paw{position:absolute;pointer-events:none;opacity:.10;font-size:16px;z-index:1}
-.paw1{right:25px;top:18px;transform:rotate(20deg)}
-.paw2{left:25px;bottom:15px;transform:rotate(-18deg)}
-.paw3{right:30px;bottom:20px;transform:rotate(15deg)}
-.peek{position:absolute;z-index:5;pointer-events:none}
-.peek img{display:block;width:100%;height:auto}
-.peek-hinata{width:48px;left:3px;bottom:5px}
-.peek-reo{width:50px;right:3px;top:82px}
-.peek-ren{width:46px;left:3px;top:110px}
-.peek-sora{width:48px;right:3px;bottom:12px}
-.peek-night{width:46px;left:3px;bottom:3px}
-.welcome{position:relative;min-height:180px;padding:35px 55px 32px;text-align:center}
-.welcome h2,.welcome p{position:relative;z-index:2}
-.welcome h2{margin:0 0 8px;font-size:1.4rem}
-.welcome p{margin:0;font-size:.84rem;line-height:1.9}
-.menu{position:relative;padding:24px 26px 42px}
-.section-title{position:relative;z-index:2;margin:0 0 16px;text-align:center;font-size:1.3rem}
-.menu-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
-.menu-card{overflow:hidden;background:white;border:1px solid #ead4b8;border-radius:13px;box-shadow:0 3px 8px #50321e12}
-.menu-card:active{transform:scale(.97)}
-.menu-card img{width:100%;aspect-ratio:1;object-fit:cover}
-.family{position:relative;padding:38px 32px 46px;background:#fffdf79e}
-.family h2{position:relative;z-index:2;margin:0 0 6px;text-align:center;font-size:1.35rem}
-.family-lead{position:relative;z-index:2;margin:0 0 18px;text-align:center;font-size:.77rem;line-height:1.7}
-.family-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
-.family-card{padding:5px;text-align:center;background:#ffffffed;border:1px solid #ead8c3;border-radius:11px;box-shadow:0 2px 6px #50321e0d}
-.family-card img{width:100%;aspect-ratio:1;object-fit:contain;border-radius:7px}
-.family-card strong{display:block;margin-top:3px;font-size:.62rem}
-.pet-walk{position:relative;height:115px}
-.pet{position:absolute;z-index:3;pointer-events:none}
-.pet-ten{width:57px;left:9%;top:21px;transform:rotate(-5deg)}
-.pet-ame{width:54px;right:10%;top:5px;transform:rotate(4deg)}
-.pet-choco{width:44px;left:47%;bottom:3px;transform:translateX(-50%)}
-.cooking-note{position:relative;padding:35px 18px 48px;text-align:center;scroll-margin-top:95px}
-.cooking-note h2{position:relative;z-index:2;margin:0 0 9px;font-size:clamp(1.12rem,4.4vw,1.6rem)}
-.cooking-note .intro{position:relative;z-index:2;margin:0 auto 20px;font-size:.84rem;line-height:1.9}
-.cooking-banner{width:min(100%,580px);margin:0 auto 22px;border-radius:17px;box-shadow:0 4px 12px #50321e18}
-.lesson-title{font-size:1.12rem;margin:25px 0 12px}
-.lesson-note{font-size:.76rem;line-height:1.8;color:#846b58;margin:0 0 14px}
-.recipe-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:650px;margin:auto;text-align:left}
-.recipe-card{border:1px solid #ead7bd;background:#fffdf9;border-radius:15px;padding:15px 12px;box-shadow:0 3px 10px #50321e12;min-width:0}
-.recipe-card h4{font-size:.95rem;margin:0 0 8px;overflow-wrap:anywhere}
-.recipe-card .tag{display:inline-block;background:#f6e5d0;color:#79543c;border-radius:30px;padding:4px 9px;font-size:.7rem;margin-bottom:8px}
-.recipe-card p{font-size:.78rem;line-height:1.7;margin:0 0 8px}
-.recipe-card details{border-top:1px dashed #e4c9a9;margin-top:9px;padding-top:9px}
-.recipe-card summary{cursor:pointer;font-size:.8rem;font-weight:800;color:#98603b}
-.recipe-card .details-body{font-size:.78rem;line-height:1.85;margin-top:9px}
-.recipe-card .recipe-photo{width:100%;height:auto;object-fit:contain;border-radius:11px;margin-bottom:10px}
-.recipe-card .recipe-lines{white-space:pre-wrap;overflow-wrap:anywhere;margin-top:8px}
-.recipe-card .recipe-heading{display:block;font-size:.8rem;margin-top:12px}
-.lesson-message{max-width:650px;margin:20px auto 0;background:#f7e9d7;border-radius:15px;padding:15px;font-size:.83rem;line-height:1.8}
-.contact{position:relative;padding:30px 28px 38px}
-.contact-card{position:relative;z-index:2;max-width:620px;margin:auto;overflow:hidden;border-radius:17px;box-shadow:0 4px 12px #50321e1a}
-.contact-card img{width:100%}
-.goodbye{position:relative;padding:38px 55px 42px;text-align:center}
-.goodbye h2{position:relative;z-index:2;margin:0 0 8px;font-size:1.05rem}
-.goodbye p{position:relative;z-index:2;margin:0;font-size:.78rem;line-height:1.8}
-.top-button{position:relative;z-index:6;display:inline-block;margin-top:16px;padding:9px 20px;color:white;background:#a66d42;border-radius:999px;font-size:.75rem;font-weight:900;box-shadow:0 3px 8px #50321e24}
-footer{position:relative;padding:20px 15px 26px;text-align:center;color:#72594a;font-size:.68rem;background:#ead7bc}
-@media(max-width:390px){.menu{padding-left:20px;padding-right:20px}.menu-grid{gap:7px}.family{padding-left:25px;padding-right:25px}.family-grid{gap:5px}.family-card{padding:4px}.family-card strong{font-size:.59rem}.peek-hinata,.peek-reo,.peek-ren,.peek-sora,.peek-night{width:43px}.recipe-grid{gap:8px}.recipe-card{padding:12px 9px}}
-@media(min-width:700px){.nav{justify-content:center}.nav a{flex:0 0 72px}.menu{padding-left:80px;padding-right:80px}.family{padding-left:80px;padding-right:80px}.family-grid{grid-template-columns:repeat(7,1fr)}.recipe-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.hero{padding:14px 14px 8px;text-align:center}.hero-title{margin:4px 0;font-size:clamp(2rem,8vw,3.5rem);font-weight:900}.hero-sub{margin:0 0 12px;font-size:.82rem;font-weight:700;line-height:1.6}.hero-main{width:100%;border-radius:22px;box-shadow:0 5px 16px #50321e1f}
+.nav{position:sticky;top:0;z-index:30;display:flex;gap:4px;padding:8px 6px;overflow-x:auto;scrollbar-width:none;background:#fff9ecf5;border-bottom:1px solid #ead8c1;backdrop-filter:blur(8px)}.nav::-webkit-scrollbar{display:none}.nav a{flex:1 0 56px;text-align:center;font-size:.58rem;font-weight:800}.nav img{width:42px;height:42px;margin:0 auto 3px;object-fit:cover;border-radius:10px;box-shadow:0 2px 6px #462d1a1a}
+.paw{position:absolute;pointer-events:none;opacity:.10;font-size:16px;z-index:1}.paw1{right:25px;top:18px;transform:rotate(20deg)}.paw2{left:25px;bottom:15px;transform:rotate(-18deg)}.paw3{right:30px;bottom:20px;transform:rotate(15deg)}
+.peek{position:absolute;z-index:5;pointer-events:none}.peek img{display:block;width:100%;height:auto}
+/* 左側の歓迎キャラ：赤丸で指定された程度に大きく */
+.peek-hinata{width:83px;left:0;top:32px}
+/* メニュー右側：カードには重ねない */
+.peek-reo{width:45px;right:0;bottom:8px;transform:scaleX(-1)}
+/* 家族紹介：左は見出し脇、右はちょこの枠の隣で反転 */
+.peek-ren{width:63px;left:0;top:18px}
+.peek-sora{width:64px;right:0;bottom:14px;transform:scaleX(-1)}
+/* 料理の下から問い合わせへつながるひょっこり */
+.peek-night{width:78px;left:0;bottom:-24px}
+.welcome{position:relative;min-height:180px;padding:35px 74px 32px;text-align:center}.welcome h2,.welcome p{position:relative;z-index:2}.welcome h2{margin:0 0 8px;font-size:1.4rem}.welcome p{margin:0;font-size:.84rem;line-height:1.9}
+.menu{position:relative;padding:24px 46px 42px}.section-title{position:relative;z-index:2;margin:0 0 16px;text-align:center;font-size:1.3rem}.menu-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:11px;max-width:700px;margin:auto}.menu-card{overflow:hidden;background:white;border:1px solid #ead4b8;border-radius:13px;box-shadow:0 3px 8px #50321e12}.menu-card:active{transform:scale(.97)}.menu-card img{width:100%;aspect-ratio:1;object-fit:cover}
+.family{position:relative;padding:38px 32px 18px;background:#fffdf79e}.family h2{position:relative;z-index:2;margin:0 0 6px;text-align:center;font-size:1.35rem}.family-lead{position:relative;z-index:2;margin:0 0 18px;text-align:center;font-size:.77rem;line-height:1.7}.family-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.family-card{padding:5px;text-align:center;background:#ffffffed;border:1px solid #ead8c3;border-radius:11px;box-shadow:0 2px 6px #50321e0d}.family-card img{width:100%;aspect-ratio:1;object-fit:contain;border-radius:7px}.family-card strong{display:block;margin-top:3px;font-size:.62rem}
+/* てん・あめは料理見出しの両側。ちょこは習ったお料理の左 */
+.pet-walk{position:relative;height:65px}.pet{position:absolute;z-index:3;pointer-events:none}.pet-choco{width:49px;left:48%;top:3px;transform:translateX(-50%)}.pet-ten{width:68px;left:3%;top:11px}.pet-ame{width:68px;right:3%;top:11px}
+.cooking-note{position:relative;padding:32px 18px 48px;text-align:center;scroll-margin-top:95px}.cooking-note h2{position:relative;z-index:2;margin:0 0 9px;font-size:clamp(1.12rem,4.4vw,1.6rem)}.cooking-note .intro{position:relative;z-index:2;margin:0 auto 20px;font-size:.84rem;line-height:1.9}.cooking-banner{width:min(100%,580px);margin:0 auto 22px;border-radius:17px;box-shadow:0 4px 12px #50321e18}.cooking-head{position:relative;padding:35px 64px 8px;min-height:150px}.cooking-peek-right{position:absolute;right:0;top:35px;width:75px;transform:scaleX(-1);pointer-events:none;z-index:3}.cooking-peek-right img{width:100%}.lesson-title{font-size:1.12rem;margin:25px 0 12px}.lesson-note{font-size:.76rem;line-height:1.8;color:#846b58;margin:0 0 14px}.recipe-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:650px;margin:auto;text-align:left}.recipe-card{border:1px solid #ead7bd;background:#fffdf9;border-radius:15px;padding:15px 12px;box-shadow:0 3px 10px #50321e12;min-width:0}.recipe-card h4{font-size:.95rem;margin:0 0 8px;overflow-wrap:anywhere}.recipe-card .tag{display:inline-block;background:#f6e5d0;color:#79543c;border-radius:30px;padding:4px 9px;font-size:.7rem;margin-bottom:8px}.recipe-card p{font-size:.78rem;line-height:1.7;margin:0 0 8px}.recipe-card details{border-top:1px dashed #e4c9a9;margin-top:9px;padding-top:9px}.recipe-card summary{cursor:pointer;font-size:.8rem;font-weight:800;color:#98603b}.recipe-card .details-body{font-size:.78rem;line-height:1.85;margin-top:9px}.recipe-card .recipe-photo{width:100%;height:auto;object-fit:contain;border-radius:11px;margin-bottom:10px}.recipe-card .recipe-lines{white-space:pre-wrap;overflow-wrap:anywhere;margin-top:8px}.recipe-card .recipe-heading{display:block;font-size:.8rem;margin-top:12px}.lesson-message{max-width:650px;margin:20px auto 0;background:#f7e9d7;border-radius:15px;padding:15px;font-size:.83rem;line-height:1.8}
+.contact{position:relative;padding:30px 28px 38px}.contact-card{position:relative;z-index:2;max-width:620px;margin:auto;overflow:hidden;border-radius:17px;box-shadow:0 4px 12px #50321e1a}.contact-card img{width:100%}
+.goodbye{position:relative;padding:38px 55px 42px;text-align:center}.goodbye h2{position:relative;z-index:2;margin:0 0 8px;font-size:1.05rem}.goodbye p{position:relative;z-index:2;margin:0;font-size:.78rem;line-height:1.8}.baby-family{width:min(100%,570px);margin:20px auto 0;border-radius:17px;box-shadow:0 3px 12px #50321e18}.top-button{position:relative;z-index:6;display:inline-block;margin-top:16px;padding:9px 20px;color:white;background:#a66d42;border-radius:999px;font-size:.75rem;font-weight:900;box-shadow:0 3px 8px #50321e24}.goodbye-peek{position:absolute;width:72px;right:0;bottom:90px;transform:scaleX(-1);pointer-events:none;z-index:2}.goodbye-peek img{width:100%}footer{position:relative;padding:20px 15px 26px;text-align:center;color:#72594a;font-size:.68rem;background:#ead7bc}
+@media(max-width:390px){.menu{padding-left:36px;padding-right:36px}.menu-grid{gap:9px}.family{padding-left:25px;padding-right:25px}.family-grid{gap:5px}.family-card{padding:4px}.family-card strong{font-size:.59rem}.peek-hinata{width:75px}.peek-sora{width:55px;bottom:10px}.peek-ren{width:55px}.recipe-grid{gap:8px}.recipe-card{padding:12px 9px}.cooking-head{padding-left:56px;padding-right:56px}.cooking-peek-right{width:62px}.goodbye{padding-left:32px;padding-right:32px}}
+@media(min-width:700px){.nav{justify-content:center}.nav a{flex:0 0 72px}.menu{padding-left:80px;padding-right:80px}.family{padding-left:80px;padding-right:80px}.family-grid{grid-template-columns:repeat(7,1fr)}.peek-sora{bottom:15px}.recipe-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* 見出し脇のひょっこりを重複させず配置 */
+.lesson-heading{position:relative;max-width:650px;margin:10px auto 6px;min-height:90px;display:flex;align-items:center;justify-content:center;padding:0 74px}
+.lesson-heading .lesson-title{margin:0;font-size:1.12rem}
+.lesson-choco{position:absolute;width:55px;left:6px;top:50%;transform:translateY(-50%);height:auto}
+.lesson-peek{position:absolute;width:74px;right:0;top:50%;transform:translateY(-50%) scaleX(-1);height:auto}
+.cooking-head .pet-ten{left:0;top:8px;width:62px}
+.cooking-head .pet-ame{right:0;top:8px;width:62px}
+.cooking-head{padding:48px 62px 12px;min-height:160px}
+.baby-family{display:block;max-width:100%;height:auto}
+@media(max-width:390px){.lesson-heading{padding:0 60px;min-height:82px}.lesson-choco{width:46px}.lesson-peek{width:63px}.cooking-head .pet-ten,.cooking-head .pet-ame{width:52px}}
+
+/* 2026-10-15: スマホでのひょっこり位置ずれ修正 */
+.menu{padding-right:clamp(32px,9vw,76px)}
+.peek-reo{right:8px;bottom:55px;width:clamp(34px,9vw,54px);transform:scaleX(-1)}
+.family{padding-right:clamp(32px,9vw,80px)}
+.family-grid{padding-right:0}
+.peek-ren{left:4px;top:13px;width:clamp(37px,10vw,57px)}
+.peek-sora{right:6px;bottom:35px;width:clamp(38px,10vw,58px);transform:scaleX(-1)}
+.cooking-head{padding:28px 53px 10px;min-height:142px}
+.cooking-head h2{font-size:clamp(.92rem,3.75vw,1.45rem);line-height:1.35;overflow-wrap:normal}
+.cooking-head .pet-ten{left:2px;top:44px;width:clamp(40px,11vw,58px)}
+.cooking-head .pet-ame{right:2px;top:44px;width:clamp(40px,11vw,58px)}
+.lesson-heading{padding-left:58px;padding-right:68px}
+.lesson-choco{left:3px;width:clamp(39px,11vw,52px)}
+.lesson-peek{right:3px;width:clamp(44px,12vw,65px)}
+@media(max-width:390px){
+ .menu{padding-right:35px}
+ .family{padding-right:37px}
+ .peek-sora{right:3px;bottom:32px;width:40px}
+ .peek-reo{right:3px;bottom:51px;width:36px}
+ .cooking-head{padding:26px 48px 10px;min-height:135px}
+ .cooking-head h2{font-size:clamp(.88rem,3.65vw,1.1rem)}
+ .cooking-head .pet-ten,.cooking-head .pet-ame{width:42px;top:45px}
+}
+/* 最後の挨拶の左側に移動したひょっこり猫 */
+.goodbye-reo{position:absolute;left:8px;top:105px;width:clamp(48px,11vw,78px);z-index:3;pointer-events:none;transform:none}
+.goodbye-reo img{display:block;width:100%;height:auto}
+@media(max-width:390px){.goodbye-reo{left:3px;top:112px;width:46px}}
+@media(min-width:700px){.goodbye-reo{left:8%;top:100px;width:80px}}
 </style>
 </head>
 <body>
 <div class="wrap" id="top">
-<section class="hero">
-<h1 class="hero-title">🐾 たっちゃん家 🐾</h1>
-<p class="hero-sub">猫たち家族のゆるっと日常をお届けする公式ホームページ</p>
-<img class="hero-main" src="tacchan-family.png" alt="たっちゃん家">
-</section>
+<section class="hero"><h1 class="hero-title">🐾 たっちゃん家 🐾</h1><p class="hero-sub">猫たち家族のゆるっと日常をお届けする公式ホームページ</p><img class="hero-main" src="tacchan-family.png" alt="たっちゃん家"></section>
 <nav class="nav" aria-label="メインメニュー">
-<a href="#top"><img src="nav-top.png" alt="">TOP</a>
-<a href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="nav-diary.png" alt="">日記</a>
-<a href="#cooking-note"><img src="nav-momo-cooking.png" alt="">お料理</a>
-<a href="https://room.rakuten.co.jp/tacchan_ossan_neko/items" target="_blank" rel="noopener noreferrer"><img src="nav-rakuten.png" alt="">楽天ROOM</a>
-<a href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="nav-fortune.PNG" alt="">干支占い</a>
-<a href="https://www.instagram.com/mogumogu_sanpobiyori/" target="_blank" rel="noopener noreferrer"><img src="nav-mogumogu.png" alt="">もぐもぐ</a>
+<a href="#top"><img src="nav-top.png" alt="">TOP</a><a href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="nav-diary.png" alt="">日記</a><a href="#cooking-note"><img src="nav-momo-cooking.png" alt="">お料理</a><a href="https://room.rakuten.co.jp/tacchan_ossan_neko/items" target="_blank" rel="noopener noreferrer"><img src="nav-rakuten.png" alt="">楽天ROOM</a><a href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="nav-fortune.PNG" alt="">干支占い</a><a href="https://www.instagram.com/mogumogu_sanpobiyori/" target="_blank" rel="noopener noreferrer"><img src="nav-mogumogu.png" alt="">もぐもぐ</a>
 </nav>
-<section class="welcome">
-<span class="paw paw1">🐾</span><div class="peek peek-hinata"><img src="peek-hinata.png" alt=""></div>
-<h2>まいど〜！🐾</h2>
-<p>たっちゃん家へようこそ！<br>笑ったり、食べたり、ゴロゴロしたり。<br>家族のゆる〜い毎日をのぞいていってな♪</p>
-</section>
-<section class="menu">
-<span class="paw paw2">🐾</span><h2 class="section-title">🐾 たっちゃん家メニュー 🐾</h2>
-<div class="menu-grid">
-<a class="menu-card" href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="diary.jpg" alt="たっちゃん日記"></a>
-<a class="menu-card" href="#cooking-note"><img src="momo-cooking.jpg" alt="もものお料理レッスンノート"></a>
-<a class="menu-card" id="room" href="https://room.rakuten.co.jp/tacchan_ossan_neko/items" target="_blank" rel="noopener noreferrer"><img src="rakuten-room.jpg" alt="楽天ROOM"></a>
-<a class="menu-card" id="fortune" href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="fortune.jpg" alt="たっちゃん干支占い"></a>
-<a class="menu-card" id="mogumogu" href="https://www.instagram.com/mogumogu_sanpobiyori/" target="_blank" rel="noopener noreferrer"><img src="mogumogu.jpg" alt="もぐもぐ散歩日和"></a>
-<a class="menu-card" href="https://line.me/S/shop/sticker/author/6575796" target="_blank" rel="noopener noreferrer"><img src="line.jpg" alt="LINEスタンプと絵文字"></a>
-</div><div class="peek peek-reo"><img src="peek-reo.png" alt=""></div>
-</section>
-<section class="family" id="family">
-<div class="peek peek-ren"><img src="peek-ren.png" alt=""></div><div class="peek peek-sora"><img src="peek-sora.png" alt=""></div>
-<h2>🐾 たっちゃん家の紹介 🐾</h2>
-<p class="family-lead">家族4人＋ペット3匹。<br>今日もみんな自由に過ごしてます♪</p>
-<div class="family-grid">
-<div class="family-card"><img src="tatcchan.PNG" alt="たっちゃん"><strong>たっちゃん</strong></div>
-<div class="family-card"><img src="micchan.PNG" alt="みっちゃん"><strong>みっちゃん</strong></div>
-<div class="family-card"><img src="riku.PNG" alt="りく"><strong>りく</strong></div>
-<div class="family-card"><img src="momo.PNG" alt="もも"><strong>もも</strong></div>
-<div class="family-card"><img src="ten.PNG" alt="てん"><strong>てん</strong></div>
-<div class="family-card"><img src="ame.PNG" alt="あめ"><strong>あめ</strong></div>
-<div class="family-card"><img src="choco.PNG" alt="ちょこ"><strong>ちょこ</strong></div>
-</div>
-</section>
-<div class="pet-walk"><img class="pet pet-ten" src="pet-ten.png" alt=""><img class="pet pet-ame" src="pet-ame.png" alt=""><img class="pet pet-choco" src="pet-choco.png" alt=""></div>
-<section class="cooking-note" id="cooking-note">
-<span class="paw paw3">🐾</span><div class="peek peek-night"><img src="peek-night.png" alt=""></div>
-<h2>🍳 もものお料理レッスンノート</h2>
-<p class="intro">料理教室で習ったことを記録中♪<br>おいしく作れるように、もも頑張るで〜！</p>
-<img class="cooking-banner" src="momo-cooking.jpg" alt="もものお料理レッスンノート">
-<h3 class="lesson-title">📒 習ったお料理</h3>
-<p class="lesson-note">料理名を見て「レッスンメモを見る」を押してな♪<br>分量や手順は確認できたものから追加するで！</p>
+<section class="welcome"><span class="paw paw1">🐾</span><div class="peek peek-hinata"><img src="peek-hinata.png" alt=""></div><h2>まいど〜！🐾</h2><p>たっちゃん家へようこそ！<br>笑ったり、食べたり、ゴロゴロしたり。<br>家族のゆる〜い毎日をのぞいていってな♪</p></section>
+<section class="menu"><span class="paw paw2">🐾</span><h2 class="section-title">🐾 たっちゃん家メニュー 🐾</h2><div class="menu-grid">
+<a class="menu-card" href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="diary.jpg" alt="たっちゃん日記"></a><a class="menu-card" href="#cooking-note"><img src="momo-cooking.jpg" alt="もものお料理レッスンノート"></a><a class="menu-card" id="room" href="https://room.rakuten.co.jp/tacchan_ossan_neko/items" target="_blank" rel="noopener noreferrer"><img src="rakuten-room.jpg" alt="楽天ROOM"></a><a class="menu-card" id="fortune" href="https://www.instagram.com/tacchan_ossan_neko/" target="_blank" rel="noopener noreferrer"><img src="fortune.jpg" alt="たっちゃん干支占い"></a><a class="menu-card" id="mogumogu" href="https://www.instagram.com/mogumogu_sanpobiyori/" target="_blank" rel="noopener noreferrer"><img src="mogumogu.jpg" alt="もぐもぐ散歩日和"></a><a class="menu-card" href="https://line.me/S/shop/sticker/author/6575796" target="_blank" rel="noopener noreferrer"><img src="line.jpg" alt="LINEスタンプと絵文字"></a>
+</div></section>
+<section class="family" id="family"><div class="peek peek-ren"><img src="peek-ren.png" alt=""></div><div class="peek peek-sora"><img src="peek-sora.png" alt=""></div><h2>🐾 たっちゃん家の紹介 🐾</h2><p class="family-lead">家族4人＋ペット3匹。<br>今日もみんな自由に過ごしてます♪</p><div class="family-grid">
+<div class="family-card"><img src="tatcchan.PNG" alt="たっちゃん"><strong>たっちゃん</strong></div><div class="family-card"><img src="micchan.PNG" alt="みっちゃん"><strong>みっちゃん</strong></div><div class="family-card"><img src="riku.PNG" alt="りく"><strong>りく</strong></div><div class="family-card"><img src="momo.PNG" alt="もも"><strong>もも</strong></div><div class="family-card"><img src="ten.PNG" alt="てん"><strong>てん</strong></div><div class="family-card"><img src="ame.PNG" alt="あめ"><strong>あめ</strong></div><div class="family-card"><img src="choco.PNG" alt="ちょこ"><strong>ちょこ</strong></div>
+</div></section>
+
+<section class="cooking-note" id="cooking-note"><span class="paw paw3">🐾</span><div class="cooking-head"><img class="pet pet-ten" src="pet-ten.png" alt=""><img class="pet pet-ame" src="pet-ame.png" alt=""><h2>🍳 もものお料理レッスンノート</h2><p class="intro">料理教室で習ったことを記録中♪<br>おいしく作れるように、もも頑張るで〜！</p></div>
+<img class="cooking-banner" src="momo-cooking.jpg" alt="もものお料理レッスンノート"><div class="lesson-heading"><img class="lesson-choco" src="pet-choco.png" alt="ちょこ"><h3 class="lesson-title">📒 習ったお料理</h3><img class="lesson-peek" src="peek-night.png" alt=""></div><p class="lesson-note">料理名を見て「レッスンメモを見る」を押してな♪<br>分量や手順は確認できたものから追加するで！</p>
 <div class="recipe-grid" id="recipe-list">
 <article class="recipe-card"><span class="tag">体験レッスン</span><h4>🍖 照り焼きハンバーグ</h4><p>甘辛い照り焼き味のハンバーグ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card"><span class="tag">体験レッスン</span><h4>🎃 かぼちゃのポタージュ</h4><p>かぼちゃを使ったスープ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
@@ -146,41 +97,30 @@ footer{position:relative;padding:20px 15px 26px;text-align:center;color:#72594a;
 <article class="recipe-card"><span class="tag">和食レッスン</span><h4>🥢 切り干し大根</h4><p>ごはんに合うおかず。</p><details><summary>レッスンメモを見る</summary><div class="details-body">材料・分量・作り方は記録を確認してから掲載予定♪</div></details></article>
 <article class="recipe-card"><span class="tag">次回のレッスン予定</span><h4>🐟 サバの味噌煮</h4><p>これから習う予定のお料理。</p><details><summary>レッスンメモを見る</summary><div class="details-body">レッスン後に記録するで♪</div></details></article>
 <article class="recipe-card"><span class="tag">次回のレッスン予定</span><h4>🥗 レンコンサラダ</h4><p>ハムを使ったサラダ。</p><details><summary>レッスンメモを見る</summary><div class="details-body">レシピメモ：酢 大さじ1、ハム。その他の材料と手順は確認後に追加するで♪</div></details></article>
-</div>
-<p class="lesson-message">🐱 もものひとこと<br>少しずつレパートリーを増やしていくで〜！<br>次のお料理もお楽しみに♪</p>
-</section>
+</div><p class="lesson-message">🐱 もものひとこと<br>少しずつレパートリーを増やしていくで〜！<br>次のお料理もお楽しみに♪</p></section>
 <section class="contact"><div class="contact-card"><img src="contact.jpg" alt="お問い合わせ"></div></section>
-<section class="goodbye"><h2>今日も遊びに来てくれておーきに！🐾</h2><p>たっちゃん家は今日も<br>ぼちぼち、のんびり営業中。<br><br>また遊びに来てな〜♪</p><a class="top-button" href="#top">🐾 TOPへ ↑</a></section>
+<section class="goodbye"><div class="goodbye-reo"><img src="peek-reo.png" alt="ひょっこり猫"></div><h2>今日も遊びに来てくれておーきに！🐾</h2><p>たっちゃん家は今日も<br>ぼちぼち、のんびり営業中。<br><br>また遊びに来てな〜♪</p><img class="baby-family" src="tacchan-baby-family.PNG" alt="赤ちゃんになったたっちゃん、みっちゃん、りく、もも" loading="lazy" onerror="this.style.display='none'"><a class="top-button" href="#top">🐾 TOPへ ↑</a></section>
 <footer>🐾 たっちゃん家 🐾<br>© 2026 Tacchan Family</footer>
 </div>
 <script>
 (async function(){
- const list=document.getElementById('recipe-list');
- if(!list)return;
+ const list=document.getElementById('recipe-list');if(!list)return;
  function normalizeTitle(value){return String(value||'').replace(/^[^一-龯ぁ-んァ-ヶA-Za-z0-9]+/,'').replace(/[\s\u3000]/g,'').replace(/（.*?）|\(.*?\)/g,'').trim();}
  try{
-  const response=await fetch('recipes.json?v='+Date.now(),{cache:'no-store'});
-  if(!response.ok)return;
-  const recipes=await response.json();
-  if(!Array.isArray(recipes))return;
+  const response=await fetch('recipes.json?v='+Date.now(),{cache:'no-store'});if(!response.ok)return;
+  const recipes=await response.json();if(!Array.isArray(recipes))return;
   const addedTitles=new Set();
   for(const recipe of recipes){
    if(!recipe||typeof recipe.title!=='string')continue;
    const title=normalizeTitle(recipe.title);
    if(!title||title.includes('肉じゃが')||title.includes('豚汁')||title.includes('生姜焼き')||addedTitles.has(title))continue;
-   const oldCard=Array.from(list.querySelectorAll('.recipe-card')).find(card=>{const h=card.querySelector('h4');return h&&normalizeTitle(h.textContent)===title;});
-   if(oldCard)oldCard.remove();
+   const oldCard=Array.from(list.querySelectorAll('.recipe-card')).find(card=>{const h=card.querySelector('h4');return h&&normalizeTitle(h.textContent)===title;});if(oldCard)oldCard.remove();
    const card=document.createElement('article');card.className='recipe-card';
-   if(typeof recipe.image==='string'&&/^recipe-images\/[a-zA-Z0-9._-]+$/.test(recipe.image)){
-    const img=document.createElement('img');img.className='recipe-photo';img.src=recipe.image;img.alt=recipe.title;img.loading='lazy';img.onerror=function(){this.style.display='none';};card.append(img);
-   }
+   if(typeof recipe.image==='string'&&/^recipe-images\/[a-zA-Z0-9._-]+$/.test(recipe.image)){const img=document.createElement('img');img.className='recipe-photo';img.src=recipe.image;img.alt=recipe.title;img.loading='lazy';img.onerror=function(){this.style.display='none';};card.append(img);}
    const tag=document.createElement('span');tag.className='tag';tag.textContent='もものレシピ';card.append(tag);
    const h=document.createElement('h4');h.textContent=recipe.title;card.append(h);
    const details=document.createElement('details');const summary=document.createElement('summary');summary.textContent='レシピを見る';details.append(summary);
-   for(const [label,key] of [['🧂 材料・調味料','ingredients'],['🍳 作り方・流れ','steps']]){
-    const heading=document.createElement('strong');heading.className='recipe-heading';heading.textContent=label;details.append(heading);
-    const p=document.createElement('p');p.className='recipe-lines';p.textContent=recipe[key]||'準備中';details.append(p);
-   }
+   for(const [label,key] of [['🧂 材料・調味料','ingredients'],['🍳 作り方・流れ','steps']]){const heading=document.createElement('strong');heading.className='recipe-heading';heading.textContent=label;details.append(heading);const p=document.createElement('p');p.className='recipe-lines';p.textContent=recipe[key]||'準備中';details.append(p);}
    card.append(details);list.append(card);addedTitles.add(title);
   }
  }catch(err){console.warn('レシピを読み込めませんでした',err);}
