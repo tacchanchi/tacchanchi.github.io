@@ -96,6 +96,43 @@
  .lesson-heading .lesson-peek{width:85px}
  .goodbye-reo{width:95px;top:63px}
 }
+
+/* 2026-10-15: 最終位置調整（既存コンテンツは維持） */
+/* 見出しは1行。ペットは説明文の左右に置き、サイズを維持 */
+.cooking-head{padding:22px 0 18px;min-height:172px}
+.cooking-head h2{font-size:clamp(15px,3.8vw,23px);white-space:nowrap;line-height:1.5;margin:0 auto 13px}
+.cooking-head .intro{max-width:calc(100% - 160px);margin:0 auto;line-height:1.9}
+.cooking-head .pet-ten,.cooking-head .pet-ame{top:55px;width:clamp(75px,19vw,110px)}
+/* 右のひょっこりを説明文側の右端に配置 */
+.lesson-heading{max-width:650px;padding:0 110px 0 12px;min-height:125px}
+.lesson-heading .lesson-peek{right:0;width:clamp(82px,23vw,120px)}
+/* 最後の家族写真はページ幅の中央に。文字だけ猫の分を避ける */
+.goodbye{padding:38px 28px 42px;text-align:center}
+.goodbye h2,.goodbye p{padding-left:clamp(70px,18vw,120px);padding-right:0}
+.goodbye .baby-family{display:block;width:min(100%,570px);margin:20px auto 0;max-width:100%;height:auto}
+.goodbye-reo{left:0;top:54px;width:clamp(92px,24vw,140px)}
+@media(max-width:390px){
+ .cooking-head h2{font-size:clamp(14px,3.8vw,16px)}
+ .cooking-head .intro{max-width:calc(100% - 146px);font-size:.77rem}
+ .cooking-head .pet-ten,.cooking-head .pet-ame{top:58px;width:73px}
+ .goodbye{padding-left:18px;padding-right:18px}
+ .goodbye h2,.goodbye p{padding-left:80px}
+ .goodbye-reo{width:95px;top:63px}
+}
+@media(min-width:700px){.goodbye-reo{left:8%;top:90px}}
+
+/* 最終調整：料理見出し・ひょっこり・赤ちゃん家族の中央配置 */
+.cooking-head{padding-left:0;padding-right:0}
+.cooking-head h2{display:block;width:100%;white-space:nowrap;overflow:visible;font-size:clamp(13px,3.55vw,23px);letter-spacing:-.035em;line-height:1.45;text-align:center}
+.cooking-head .intro{max-width:calc(100% - 160px)}
+.lesson-heading{max-width:650px;padding-right:clamp(90px,25vw,145px);padding-left:12px}
+.lesson-heading .lesson-peek{right:0;top:50%;transform:translateY(-50%) scaleX(-1)}
+.goodbye .baby-family{display:block;position:relative;left:auto;right:auto;transform:none;width:min(100%,570px);max-width:100%;height:auto;margin:20px auto 0;object-fit:contain;object-position:center}
+@media(max-width:390px){
+ .cooking-head h2{font-size:clamp(12px,3.5vw,14px)}
+ .cooking-head .intro{max-width:calc(100% - 146px)}
+ .lesson-heading{padding-right:92px;padding-left:8px}
+}
 </style>
 </head>
 <body>
